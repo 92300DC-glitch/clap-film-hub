@@ -27,19 +27,6 @@ export function HeroSection() {
         <div className="absolute inset-0 z-20 mix-blend-multiply bg-[hsl(220,70%,15%,0.4)]" />
       </div>
 
-      {/* Vertical Edition Tag - Left side */}
-      <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-px h-20 bg-accent" />
-          <span 
-            className="text-accent font-bold text-sm tracking-[0.3em] uppercase"
-            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
-          >
-            Édition 2026
-          </span>
-          <div className="w-px h-20 bg-accent" />
-        </div>
-      </div>
 
       {/* Main Content - Brutalist Layout */}
       <div className="container mx-auto px-4 pb-12 md:pb-20 relative z-20">
