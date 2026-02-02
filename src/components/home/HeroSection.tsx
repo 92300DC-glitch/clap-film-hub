@@ -11,14 +11,28 @@ export function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-hero-gradient">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <iframe
+          src="https://www.youtube.com/embed/weDPXZkooSQ?autoplay=1&mute=1&loop=1&playlist=weDPXZkooSQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] md:w-[200%] md:h-[200%] pointer-events-none"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          title="Festival background video"
+        />
+      </div>
+      
+      {/* Blue overlay to blend with theme */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,70%,25%,0.85)] via-[hsl(220,70%,20%,0.8)] to-[hsl(220,80%,15%,0.9)]" />
+      
+      {/* Gold accent pattern */}
+      <div className="absolute inset-0 opacity-20">
         <div 
           className="absolute inset-0"
           style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, hsl(45 100% 50% / 0.15) 0%, transparent 50%),
-                              radial-gradient(circle at 75% 75%, hsl(45 100% 50% / 0.1) 0%, transparent 50%)`,
+            backgroundImage: `radial-gradient(circle at 25% 25%, hsl(45 100% 50% / 0.2) 0%, transparent 50%),
+                              radial-gradient(circle at 75% 75%, hsl(45 100% 50% / 0.15) 0%, transparent 50%)`,
           }}
         />
       </div>
