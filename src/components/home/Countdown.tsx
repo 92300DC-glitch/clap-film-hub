@@ -44,29 +44,35 @@ export function Countdown({ targetDate }: CountdownProps) {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="flex items-center gap-3 sm:gap-4">
+    <div className="flex flex-col items-start gap-4">
+      <p className="text-foreground/50 text-xs font-bold uppercase tracking-[0.3em]">
+        {t('hero.countdown.until')}
+      </p>
+      <div className="flex items-center gap-2 sm:gap-4">
         {timeUnits.map((unit, index) => (
-          <div key={unit.label} className="flex items-center gap-3 sm:gap-4">
+          <div key={unit.label} className="flex items-center gap-2 sm:gap-4">
             <div className="flex flex-col items-center">
-              <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-5 sm:py-3 min-w-[60px] sm:min-w-[80px]">
-                <span className="text-2xl sm:text-4xl font-bold text-accent countdown-number">
+              <div className="bg-muted border-2 border-accent px-3 py-2 sm:px-6 sm:py-4 min-w-[50px] sm:min-w-[80px] relative">
+                {/* Corner accents */}
+                <div className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-accent -translate-x-0.5 -translate-y-0.5" />
+                <div className="absolute top-0 right-0 w-2 h-2 border-t-2 border-r-2 border-accent translate-x-0.5 -translate-y-0.5" />
+                <div className="absolute bottom-0 left-0 w-2 h-2 border-b-2 border-l-2 border-accent -translate-x-0.5 translate-y-0.5" />
+                <div className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-accent translate-x-0.5 translate-y-0.5" />
+                
+                <span className="text-2xl sm:text-5xl font-black text-accent countdown-number block text-center">
                   {String(unit.value).padStart(2, '0')}
                 </span>
               </div>
-              <span className="text-xs sm:text-sm text-primary-foreground/70 mt-2 uppercase tracking-wider">
+              <span className="text-[10px] sm:text-xs text-foreground/50 mt-2 font-bold uppercase tracking-[0.2em]">
                 {unit.label}
               </span>
             </div>
             {index < timeUnits.length - 1 && (
-              <span className="text-2xl sm:text-4xl font-bold text-accent/50 -mt-6">:</span>
+              <span className="text-xl sm:text-4xl font-black text-accent/30 -mt-6">:</span>
             )}
           </div>
         ))}
       </div>
-      <p className="text-primary-foreground/60 text-sm">
-        {t('hero.countdown.until')}
-      </p>
     </div>
   );
 }

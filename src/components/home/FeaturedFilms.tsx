@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Trophy } from 'lucide-react';
+import { ArrowRight, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { useTranslation } from '@/lib/i18n';
 
 // Mock data for featured films
@@ -56,72 +55,80 @@ export function FeaturedFilms() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-20 lg:py-32 bg-background relative">
+      {/* Decorative corner */}
+      <div className="absolute top-0 right-0 w-32 h-32 border-r-4 border-t-4 border-accent" />
+      
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-12">
+        {/* Section Header - Brutalist */}
+        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-16">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">
+            <span className="text-accent font-bold text-sm uppercase tracking-[0.3em] mb-4 block">
+              Sélection
+            </span>
+            <h2 className="text-4xl lg:text-6xl font-black text-foreground uppercase tracking-tighter leading-[0.9]">
               {t('section.featuredFilms')}
             </h2>
-            <p className="text-muted-foreground text-lg">
-              {t('section.featuredFilms.subtitle')}
-            </p>
+            <div className="w-24 h-1 bg-accent mt-6" />
           </div>
-          <Button asChild variant="ghost" className="text-primary hover:text-primary/80">
-            <Link to="/films" className="flex items-center gap-2">
+          <Button 
+            asChild 
+            className="bg-transparent border-4 border-foreground text-foreground hover:bg-foreground hover:text-background font-bold uppercase tracking-wider px-8 py-6 h-auto transition-all duration-150 hover:shadow-brutal-white"
+          >
+            <Link to="/films" className="flex items-center gap-3">
               {t('section.viewAll')}
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>
         </div>
 
-        {/* Films Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredFilms.map((film) => (
+        {/* Films Grid - Brutalist */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {featuredFilms.map((film, index) => (
             <Link
               key={film.id}
               to={`/films/${film.slug}`}
-              className="group relative rounded-xl overflow-hidden bg-card shadow-sm hover:shadow-card-hover transition-all duration-300"
+              className="group relative bg-muted border-2 border-muted hover:border-accent transition-all duration-150 hover:-translate-y-2 hover:shadow-brutal"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Poster */}
-              <div className="aspect-[2/3] overflow-hidden">
+              <div className="aspect-[2/3] overflow-hidden relative">
                 <img
                   src={film.posterUrl}
                   alt={film.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                {/* Harsh overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
               </div>
 
               {/* Awards Badges */}
               {film.awards.length > 0 && (
-                <div className="absolute top-3 left-3 flex flex-col gap-2">
+                <div className="absolute top-0 left-0">
                   {film.awards.map((award) => (
-                    <Badge 
+                    <div 
                       key={award} 
-                      className="bg-accent text-accent-foreground border-0 shadow-gold"
+                      className="bg-accent text-accent-foreground px-3 py-2 text-xs font-black uppercase tracking-wider flex items-center gap-2"
                     >
-                      <Trophy className="h-3 w-3 mr-1" />
+                      <Trophy className="h-3 w-3" />
                       {award}
-                    </Badge>
+                    </div>
                   ))}
                 </div>
               )}
 
               {/* Info */}
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-accent transition-colors">
+              <div className="p-4 border-t-2 border-muted group-hover:border-accent transition-colors">
+                <h3 className="text-lg font-black text-foreground uppercase tracking-tight mb-1 group-hover:text-accent transition-colors">
                   {film.title}
                 </h3>
-                <p className="text-white/70 text-sm mb-2">{film.director}</p>
-                <div className="flex items-center gap-2 text-white/60 text-xs">
+                <p className="text-muted-foreground text-sm font-medium mb-3">{film.director}</p>
+                <div className="flex items-center gap-3 text-muted-foreground text-xs font-bold uppercase tracking-wider">
                   <span>{film.year}</span>
-                  <span>•</span>
+                  <span className="w-1 h-1 bg-accent" />
                   <span>{film.duration}</span>
-                  <span>•</span>
+                  <span className="w-1 h-1 bg-accent" />
                   <span>{film.country}</span>
                 </div>
               </div>

@@ -2,114 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Festival Ptit Clap - Design System
-   Palette: Deep Blue + Gold/Yellow + White accents
-   All colors in HSL format
+/* Festival Ptit Clap - BRUTALIST Design System
+   Palette: Near-black + Electric Gold + Raw white
+   Style: Massive typography, broken grids, harsh shadows
 */
 
 @layer base {
   :root {
-    /* Primary: Deep Festival Blue */
-    --background: 220 30% 98%;
-    --foreground: 220 60% 10%;
+    /* Background: Near black */
+    --background: 220 20% 6%;
+    --foreground: 45 10% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 60% 10%;
+    --card: 220 25% 10%;
+    --card-foreground: 45 10% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 60% 10%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 45 10% 95%;
 
-    /* Primary: Rich Blue */
-    --primary: 220 70% 25%;
-    --primary-foreground: 45 100% 96%;
+    /* Primary: Deep black-blue */
+    --primary: 220 30% 8%;
+    --primary-foreground: 45 10% 95%;
 
-    /* Secondary: Lighter Blue */
-    --secondary: 220 40% 92%;
-    --secondary-foreground: 220 70% 25%;
+    /* Secondary: Dark gray */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 45 10% 95%;
 
-    /* Muted: Soft Gray-Blue */
-    --muted: 220 20% 94%;
-    --muted-foreground: 220 15% 45%;
+    /* Muted: Charcoal */
+    --muted: 220 10% 18%;
+    --muted-foreground: 220 10% 55%;
 
-    /* Accent: Festival Gold */
+    /* Accent: Electric Gold */
     --accent: 45 100% 50%;
-    --accent-foreground: 220 60% 10%;
+    --accent-foreground: 220 30% 8%;
 
     /* Festival-specific colors */
     --festival-gold: 45 100% 50%;
-    --festival-gold-light: 45 100% 70%;
+    --festival-gold-light: 45 100% 65%;
     --festival-gold-dark: 45 100% 35%;
-    --festival-blue: 220 70% 25%;
-    --festival-blue-light: 220 60% 40%;
-    --festival-blue-dark: 220 80% 15%;
+    --festival-blue: 220 30% 8%;
+    --festival-blue-light: 220 25% 20%;
+    --festival-blue-dark: 220 40% 4%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 85% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 88%;
-    --input: 220 20% 88%;
-    --ring: 220 70% 25%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 45 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0;
 
     /* Sidebar */
-    --sidebar-background: 220 70% 20%;
-    --sidebar-foreground: 45 100% 96%;
+    --sidebar-background: 220 30% 6%;
+    --sidebar-foreground: 45 10% 95%;
     --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 220 60% 10%;
-    --sidebar-accent: 220 60% 30%;
-    --sidebar-accent-foreground: 45 100% 96%;
-    --sidebar-border: 220 50% 30%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 25% 15%;
+    --sidebar-accent-foreground: 45 10% 95%;
+    --sidebar-border: 220 20% 18%;
     --sidebar-ring: 45 100% 50%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 70% 25%) 0%, hsl(220 80% 15%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 50%) 0%, hsl(35 100% 45%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 30% 97%) 100%);
-
-    /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(220 70% 25% / 0.1);
-    --shadow-md: 0 4px 16px -4px hsl(220 70% 25% / 0.15);
-    --shadow-lg: 0 8px 32px -8px hsl(220 70% 25% / 0.2);
-    --shadow-gold: 0 4px 24px -4px hsl(45 100% 50% / 0.35);
+    /* Brutalist Shadows */
+    --shadow-brutal: 4px 4px 0 hsl(45 100% 50%);
+    --shadow-brutal-lg: 8px 8px 0 hsl(45 100% 50%);
+    --shadow-brutal-hover: 8px 8px 0 hsl(45 100% 50%);
   }
 
   .dark {
-    --background: 220 60% 8%;
-    --foreground: 45 100% 96%;
-
-    --card: 220 50% 12%;
-    --card-foreground: 45 100% 96%;
-
-    --popover: 220 50% 12%;
-    --popover-foreground: 45 100% 96%;
-
-    --primary: 45 100% 50%;
-    --primary-foreground: 220 60% 10%;
-
-    --secondary: 220 40% 20%;
-    --secondary-foreground: 45 100% 96%;
-
-    --muted: 220 30% 18%;
-    --muted-foreground: 220 15% 65%;
-
+    /* Dark mode is the default brutalist look */
+    --background: 220 20% 6%;
+    --foreground: 45 10% 95%;
+    --card: 220 25% 10%;
+    --card-foreground: 45 10% 95%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 45 10% 95%;
+    --primary: 220 30% 8%;
+    --primary-foreground: 45 10% 95%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 45 10% 95%;
+    --muted: 220 10% 18%;
+    --muted-foreground: 220 10% 55%;
     --accent: 45 100% 50%;
-    --accent-foreground: 220 60% 10%;
-
+    --accent-foreground: 220 30% 8%;
     --destructive: 0 62% 45%;
     --destructive-foreground: 0 0% 100%;
-
-    --border: 220 30% 22%;
-    --input: 220 30% 22%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
     --ring: 45 100% 50%;
-
-    --sidebar-background: 220 60% 6%;
-    --sidebar-foreground: 45 100% 96%;
+    --sidebar-background: 220 30% 4%;
+    --sidebar-foreground: 45 10% 95%;
     --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 220 60% 10%;
-    --sidebar-accent: 220 50% 15%;
-    --sidebar-accent-foreground: 45 100% 96%;
-    --sidebar-border: 220 40% 18%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 45 10% 95%;
+    --sidebar-border: 220 20% 15%;
     --sidebar-ring: 45 100% 50%;
   }
 }
@@ -124,56 +110,89 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Brutalist selection */
+  ::selection {
+    background: hsl(45 100% 50%);
+    color: hsl(220 30% 8%);
   }
 }
 
 @layer utilities {
-  /* Festival-specific utility classes */
+  /* Brutalist text utilities */
   .text-gradient-gold {
     @apply bg-gradient-to-r from-[hsl(45,100%,50%)] to-[hsl(35,100%,45%)] bg-clip-text text-transparent;
   }
 
-  .bg-hero-gradient {
-    background: var(--gradient-hero);
+  .text-brutal-title {
+    @apply font-black uppercase tracking-tighter leading-[0.85];
   }
 
-  .bg-gold-gradient {
-    background: var(--gradient-gold);
+  .text-brutal-label {
+    @apply font-bold uppercase tracking-[0.2em] text-sm;
   }
 
-  .shadow-gold {
-    box-shadow: var(--shadow-gold);
+  /* Brutalist shadows */
+  .shadow-brutal {
+    box-shadow: 4px 4px 0 hsl(45 100% 50%);
   }
 
-  /* Animation utilities */
+  .shadow-brutal-lg {
+    box-shadow: 8px 8px 0 hsl(45 100% 50%);
+  }
+
+  .shadow-brutal-white {
+    box-shadow: 4px 4px 0 hsl(45 10% 95%);
+  }
+
+  /* Brutalist borders */
+  .border-brutal {
+    @apply border-4 border-accent;
+  }
+
+  .border-brutal-white {
+    @apply border-4 border-foreground;
+  }
+
+  /* Brutalist hover effects */
+  .hover-brutal {
+    @apply transition-all duration-150;
+  }
+
+  .hover-brutal:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 hsl(45 100% 50%);
+  }
+
+  /* Animation utilities - harsh and abrupt */
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.2s ease-out forwards;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
+    animation: slideUp 0.3s cubic-bezier(0.2, 0, 0, 1) forwards;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.4s ease-out forwards;
+    animation: scaleIn 0.15s ease-out forwards;
+  }
+
+  .animate-glitch {
+    animation: glitch 0.3s ease-out;
   }
 
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   @keyframes slideUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -184,7 +203,7 @@
   @keyframes scaleIn {
     from {
       opacity: 0;
-      transform: scale(0.95);
+      transform: scale(0.9);
     }
     to {
       opacity: 1;
@@ -192,8 +211,27 @@
     }
   }
 
+  @keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    60% { transform: translate(-3px, -3px); }
+    80% { transform: translate(3px, 3px); }
+  }
+
   /* Countdown number styling */
   .countdown-number {
     font-variant-numeric: tabular-nums;
+  }
+
+  /* Decorative stripe pattern */
+  .stripe-pattern {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      hsl(45 100% 50% / 0.1) 10px,
+      hsl(45 100% 50% / 0.1) 20px
+    );
   }
 }
