@@ -3,24 +3,51 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { I18nProvider } from "@/lib/i18n";
 import Index from "./pages/Index";
+import Films from "./pages/Films";
+import FilmDetail from "./pages/FilmDetail";
+import Participate from "./pages/Participate";
+import Jury from "./pages/Jury";
+import Ceremony from "./pages/Ceremony";
+import Prizes from "./pages/Prizes";
+import Education from "./pages/Education";
+import Partners from "./pages/Partners";
+import Press from "./pages/Press";
+import Contact from "./pages/Contact";
+import Archives from "./pages/Archives";
+import ArchiveEdition from "./pages/ArchiveEdition";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <I18nProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/films" element={<Films />} />
+            <Route path="/films/:slug" element={<FilmDetail />} />
+            <Route path="/participer" element={<Participate />} />
+            <Route path="/jury" element={<Jury />} />
+            <Route path="/ceremonie" element={<Ceremony />} />
+            <Route path="/prix" element={<Prizes />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/partenaires" element={<Partners />} />
+            <Route path="/presse" element={<Press />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/archives" element={<Archives />} />
+            <Route path="/archives/:year" element={<ArchiveEdition />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </I18nProvider>
   </QueryClientProvider>
 );
 
