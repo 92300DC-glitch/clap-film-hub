@@ -38,60 +38,69 @@ export function JurySection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 lg:py-24 bg-muted/50">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-12">
+    <section className="py-20 lg:py-32 bg-muted relative overflow-hidden">
+      {/* Diagonal stripe decoration */}
+      <div className="absolute inset-0 stripe-pattern opacity-50" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Section Header - Brutalist */}
+        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-16">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">
+            <span className="text-accent font-bold text-sm uppercase tracking-[0.3em] mb-4 block">
+              Édition 2026
+            </span>
+            <h2 className="text-4xl lg:text-6xl font-black text-foreground uppercase tracking-tighter leading-[0.9]">
               {t('section.jury')}
             </h2>
-            <p className="text-muted-foreground text-lg">
-              {t('section.jury.subtitle')}
-            </p>
+            <div className="w-24 h-1 bg-accent mt-6" />
           </div>
-          <Button asChild variant="ghost" className="text-primary hover:text-primary/80">
-            <Link to="/jury" className="flex items-center gap-2">
+          <Button 
+            asChild 
+            className="bg-transparent border-4 border-foreground text-foreground hover:bg-foreground hover:text-background font-bold uppercase tracking-wider px-8 py-6 h-auto transition-all duration-150 hover:shadow-brutal-white"
+          >
+            <Link to="/jury" className="flex items-center gap-3">
               {t('section.viewAll')}
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>
         </div>
 
-        {/* Jury Grid */}
+        {/* Jury Grid - Brutalist */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {juryMembers.map((member) => (
+          {juryMembers.map((member, index) => (
             <Link
               key={member.id}
               to={`/personnes/${member.slug}`}
               className="group relative"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`relative rounded-2xl overflow-hidden bg-card shadow-md hover:shadow-lg transition-all duration-300 ${member.isPresident ? 'ring-2 ring-accent' : ''}`}>
+              <div className={`relative bg-background border-4 ${member.isPresident ? 'border-accent shadow-brutal' : 'border-foreground/20 hover:border-accent'} transition-all duration-150 hover:-translate-y-2 hover:shadow-brutal`}>
                 {/* Photo */}
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-[3/4] overflow-hidden relative">
                   <img
                     src={member.photoUrl}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  {/* Diagonal overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-transparent opacity-60" />
                 </div>
 
                 {/* President Badge */}
                 {member.isPresident && (
-                  <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 shadow-gold">
+                  <div className="absolute top-0 right-0 bg-accent text-accent-foreground px-4 py-2 font-black text-xs uppercase tracking-wider flex items-center gap-2">
                     <Star className="h-4 w-4 fill-current" />
                     Président(e)
                   </div>
                 )}
 
                 {/* Info */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-accent transition-colors">
+                <div className="p-6 border-t-4 border-inherit">
+                  <h3 className="text-xl font-black text-foreground uppercase tracking-tight mb-1 group-hover:text-accent transition-colors">
                     {member.name}
                   </h3>
-                  <p className="text-white/80 text-sm">{member.title}</p>
+                  <p className="text-muted-foreground text-sm font-bold uppercase tracking-wider">{member.title}</p>
                 </div>
               </div>
             </Link>

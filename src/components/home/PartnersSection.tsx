@@ -27,42 +27,46 @@ export function PartnersSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-20 lg:py-32 bg-background relative">
+      {/* Corner decoration */}
+      <div className="absolute bottom-0 left-0 w-32 h-32 border-l-4 border-b-4 border-accent" />
+      
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">
+        {/* Section Header - Brutalist */}
+        <div className="text-center mb-16">
+          <span className="text-accent font-bold text-sm uppercase tracking-[0.3em] mb-4 block">
+            Ils nous soutiennent
+          </span>
+          <h2 className="text-4xl lg:text-6xl font-black text-foreground uppercase tracking-tighter leading-[0.9] mb-6">
             {t('section.partners')}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            {t('section.partners.subtitle')}
-          </p>
+          <div className="w-24 h-1 bg-accent mx-auto" />
         </div>
 
-        {/* Partners by Category */}
-        <div className="space-y-12">
+        {/* Partners by Category - Brutalist */}
+        <div className="space-y-16">
           {Object.entries(partnersByCategory).map(([category, partners], categoryIndex) => (
             <div key={category}>
-              <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-6 text-center">
-                {category}
+              <h3 className="text-xs font-black text-accent uppercase tracking-[0.3em] mb-8 text-center">
+                — {category} —
               </h3>
               <div className={cn(
-                "flex flex-wrap items-center justify-center gap-8",
-                categoryIndex === 0 ? "gap-12" : "gap-6 lg:gap-10"
+                "flex flex-wrap items-center justify-center",
+                categoryIndex === 0 ? "gap-8 lg:gap-12" : "gap-6 lg:gap-8"
               )}>
                 {partners.map((partner) => (
                   <a
                     key={partner.id}
                     href="#"
-                    className="group relative grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                    className="group relative p-4 bg-muted border-2 border-transparent hover:border-accent transition-all duration-150 hover:-translate-y-1 hover:shadow-brutal"
                     title={partner.name}
                   >
                     <img
                       src={partner.logoUrl}
                       alt={partner.name}
                       className={cn(
-                        "object-contain",
-                        categoryIndex === 0 ? "h-16 lg:h-20" : "h-10 lg:h-14"
+                        "object-contain grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100 transition-all duration-300",
+                        categoryIndex === 0 ? "h-12 lg:h-16" : "h-8 lg:h-12"
                       )}
                       loading="lazy"
                     />

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Film, Globe } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useI18n } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -26,29 +26,33 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b-4 border-accent">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+          {/* Logo - Brutalist */}
           <Link 
             to="/" 
-            className="flex items-center gap-2 text-primary-foreground hover:opacity-90 transition-opacity"
+            className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group"
           >
-            <Film className="h-8 w-8 text-accent" />
-            <span className="font-bold text-xl hidden sm:block">Ptit Clap</span>
+            <div className="w-10 h-10 bg-accent flex items-center justify-center group-hover:shadow-brutal transition-all">
+              <span className="font-black text-accent-foreground text-lg">PC</span>
+            </div>
+            <span className="font-black text-xl uppercase tracking-tight hidden sm:block">
+              P'TIT<span className="text-accent">CLAP</span>
+            </span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Brutalist */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 to={item.href}
                 className={cn(
-                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  "px-4 py-2 text-sm font-bold uppercase tracking-wider transition-all duration-150",
                   location.pathname === item.href
                     ? "bg-accent text-accent-foreground"
-                    : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                    : "text-foreground/70 hover:text-foreground hover:bg-muted border-b-2 border-transparent hover:border-accent"
                 )}
               >
                 {t(item.key)}
@@ -56,23 +60,23 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Right Side: Language Toggle + Mobile Menu */}
-          <div className="flex items-center gap-2">
+          {/* Right Side */}
+          <div className="flex items-center gap-3">
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="text-primary-foreground hover:bg-primary-foreground/10 gap-1.5"
+              className="text-foreground hover:bg-accent hover:text-accent-foreground gap-2 font-bold uppercase tracking-wider border-2 border-foreground/30 hover:border-accent"
             >
               <Globe className="h-4 w-4" />
-              <span className="uppercase font-medium">{language}</span>
+              <span>{language}</span>
             </Button>
 
             {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden text-primary-foreground hover:bg-primary-foreground/10"
+              className="lg:hidden text-foreground hover:bg-accent hover:text-accent-foreground border-2 border-foreground/30 hover:border-accent"
               onClick={() => setIsOpen(!isOpen)}
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
@@ -81,20 +85,20 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Brutalist */}
         {isOpen && (
-          <nav className="lg:hidden py-4 border-t border-primary-foreground/10 animate-fade-in">
-            <div className="flex flex-col gap-1">
+          <nav className="lg:hidden py-6 border-t-2 border-accent/30 animate-fade-in">
+            <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
                   key={item.key}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    "px-4 py-3 text-sm font-medium rounded-md transition-colors",
+                    "px-4 py-3 text-sm font-bold uppercase tracking-wider transition-all duration-150 border-l-4",
                     location.pathname === item.href
-                      ? "bg-accent text-accent-foreground"
-                      : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                      ? "bg-accent text-accent-foreground border-accent"
+                      : "text-foreground/70 hover:text-foreground hover:bg-muted border-transparent hover:border-accent"
                   )}
                 >
                   {t(item.key)}
