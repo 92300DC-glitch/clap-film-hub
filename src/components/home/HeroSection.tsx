@@ -61,9 +61,9 @@ export function HeroSection() {
             </Button>
             <Button 
               asChild 
-              variant="outline" 
+              variant="ghost" 
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6 h-auto"
+              className="border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground text-lg px-8 py-6 h-auto"
             >
               <Link to="/films">
                 {t('hero.cta.discover')}
