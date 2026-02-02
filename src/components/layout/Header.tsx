@@ -4,6 +4,7 @@ import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useI18n } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
+import logoPtitClap from '@/assets/logo-ptit-clap.png';
 
 const navItems = [
   { key: 'nav.films', href: '/films' },
@@ -29,17 +30,16 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b-4 border-accent">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo - Brutalist */}
+          {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <div className="w-10 h-10 bg-accent flex items-center justify-center group-hover:shadow-brutal transition-all">
-              <span className="font-black text-accent-foreground text-lg">PC</span>
-            </div>
-            <span className="font-black text-xl uppercase tracking-tight hidden sm:block">
-              P'TIT<span className="text-accent">CLAP</span>
-            </span>
+            <img 
+              src={logoPtitClap} 
+              alt="Festival Ptit Clap" 
+              className="h-10 lg:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation - Brutalist */}
