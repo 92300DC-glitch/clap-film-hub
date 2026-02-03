@@ -39,7 +39,7 @@ export function HeroSection() {
           {/* Massive Title - Breaking the grid */}
           <div className="relative mb-6 md:mb-8">
             <h1 className="text-[15vw] md:text-[12vw] lg:text-[10vw] font-black text-primary-foreground leading-[0.85] tracking-tighter uppercase">
-              <span className="block -ml-[2vw]">P'TIT</span>
+              <span className="block -ml-[2vw]">PTIT</span>
               <span className="block text-accent ml-[5vw] md:ml-[10vw]">CLAP</span>
             </h1>
             {/* Decorative strike-through */}
