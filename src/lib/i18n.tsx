@@ -25,7 +25,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.title': 'Festival Ptit Clap',
-    'hero.subtitle': 'Festival du court-métrage',
+    'hero.subtitle': 'Festival du court-métrage organisé par la Ville de Levallois',
     'hero.cta.participate': 'Participer',
     'hero.cta.discover': 'Découvrir les films',
     'hero.countdown.days': 'Jours',
@@ -214,7 +214,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.title': 'Ptit Clap Festival',
-    'hero.subtitle': 'Short Film Festival',
+    'hero.subtitle': 'Short Film Festival organized by the City of Levallois',
     'hero.cta.participate': 'Participate',
     'hero.cta.discover': 'Discover Films',
     'hero.countdown.days': 'Days',
