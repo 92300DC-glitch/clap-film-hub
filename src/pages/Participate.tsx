@@ -46,9 +46,11 @@ export default function Participate() {
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
             {t('participate.subtitle')}
           </p>
-          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold">
-            <ExternalLink className="mr-2 h-5 w-5" />
-            {t('participate.cta')}
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold">
+            <a href="https://shortfilmdepot.com/fr/festival/85" target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="mr-2 h-5 w-5" />
+              {t('participate.cta')}
+            </a>
           </Button>
         </div>
       </section>
