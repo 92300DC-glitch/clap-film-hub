@@ -45,7 +45,7 @@ export function HeroSection() {
           </div>
 
           {/* CTAs - Brutalist buttons */}
-          <div className="flex-col sm:flex-row gap-4 md:gap-6 py-0 flex items-start justify-center pb-[50px]">
+          <div className="flex-col sm:flex-row gap-4 md:gap-6 py-0 pb-[50px] flex items-start justify-start">
             <Button asChild size="lg" className="bg-accent text-[hsl(220,80%,8%)] hover:bg-accent/90 text-base md:text-lg font-black uppercase tracking-wider px-8 md:px-12 py-6 md:py-8 h-auto border-4 border-accent hover:border-primary-foreground transition-all duration-150 hover:-translate-y-1 hover:translate-x-1 shadow-[4px_4px_0_hsl(45,100%,50%)] hover:shadow-[8px_8px_0_hsl(45,100%,50%)]">
               <Link to="/participer">
                 {t('hero.cta.participate')}
