@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/i18n';
 import { Countdown } from './Countdown';
 
-// Next festival date (example: June 15, 2026)
-const NEXT_FESTIVAL_DATE = new Date('2026-06-15T19:00:00');
+// Call for films deadline: March 31, 2026 at 23:59:59
+const NEXT_FESTIVAL_DATE = new Date('2026-03-31T23:59:59');
 export function HeroSection() {
   const {
     t
