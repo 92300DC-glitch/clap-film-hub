@@ -42,7 +42,7 @@ export function Footer() {
                   <span className="font-black text-accent-foreground text-xl">PC</span>
                 </div>
                 <span className="font-black text-2xl uppercase tracking-tight">
-                  P'TIT<span className="text-accent">CLAP</span>
+                  PTIT<span className="text-accent">CLAP</span>
                 </span>
               </div>
             </Link>
