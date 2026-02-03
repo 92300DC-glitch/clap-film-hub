@@ -77,7 +77,7 @@ export function PartnersSection() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-12 lg:h-16 w-auto object-contain grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300"
+                className="h-12 lg:h-16 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all duration-300"
                 loading="lazy"
               />
             </div>
