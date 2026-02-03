@@ -57,13 +57,13 @@ export default function Archives() {
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex items-center gap-2 text-white/60 text-sm mb-2">
                     <Calendar className="h-4 w-4" />
-                    <span>{edition.filmsCount} films</span>
+                    <span>{edition.filmsCount} {t('archives.films')}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
-                    Édition {edition.year}
+                    {t('archives.edition', { year: edition.year })}
                   </h3>
                   <span className="inline-flex items-center gap-1 text-sm text-white/80 group-hover:text-accent transition-colors">
-                    Voir le palmarès
+                    {t('archives.view')}
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>

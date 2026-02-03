@@ -23,7 +23,7 @@ export default function Contact() {
     
     toast({
       title: t('contact.form.success'),
-      description: 'Nous vous répondrons dans les plus brefs délais.',
+      description: t('contact.form.success.desc'),
     });
     
     setIsSubmitting(false);
@@ -39,7 +39,7 @@ export default function Contact() {
             {t('contact.title')}
           </h1>
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-            Une question ? N'hésitez pas à nous contacter
+            {t('contact.subtitle')}
           </p>
         </div>
       </section>
@@ -50,35 +50,35 @@ export default function Contact() {
             {/* Contact Form */}
             <Card>
               <CardHeader>
-                <CardTitle>Envoyez-nous un message</CardTitle>
+                <CardTitle>{t('contact.form.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">{t('contact.form.name')}</Label>
-                      <Input id="name" placeholder="Votre nom" required />
+                      <Input id="name" placeholder={t('contact.form.name.placeholder')} required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">{t('contact.form.email')}</Label>
-                      <Input id="email" type="email" placeholder="votre@email.fr" required />
+                      <Input id="email" type="email" placeholder={t('contact.form.email.placeholder')} required />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="subject">{t('contact.form.subject')}</Label>
-                    <Input id="subject" placeholder="Objet de votre message" required />
+                    <Input id="subject" placeholder={t('contact.form.subject.placeholder')} required />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">{t('contact.form.message')}</Label>
-                    <Textarea id="message" placeholder="Votre message..." rows={6} required />
+                    <Textarea id="message" placeholder={t('contact.form.message.placeholder')} rows={6} required />
                   </div>
-                  <Button 
+                  <Button
                     type="submit" 
                     className="w-full bg-accent text-accent-foreground hover:bg-accent/90 gap-2"
                     disabled={isSubmitting}
                   >
                     <Send className="h-4 w-4" />
-                    {isSubmitting ? 'Envoi en cours...' : t('common.send')}
+                    {isSubmitting ? t('common.sending') : t('common.send')}
                   </Button>
                 </form>
               </CardContent>

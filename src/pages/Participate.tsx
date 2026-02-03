@@ -5,35 +5,35 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
-const keyDates = [
-  { date: '1er Mars 2026', event: 'Ouverture des inscriptions' },
-  { date: '30 Avril 2026', event: 'Clôture des inscriptions' },
-  { date: '15 Mai 2026', event: 'Annonce de la sélection officielle' },
-  { date: '15 Juin 2026', event: 'Cérémonie de remise des prix' },
-];
-
-const conditions = [
-  'Court-métrage de fiction, animation ou documentaire',
-  'Durée maximale : 30 minutes générique compris',
-  'Film achevé après le 1er janvier 2024',
-  'Première ou deuxième œuvre du réalisateur',
-  'Sous-titres français obligatoires pour les films non francophones',
-  'Format de projection : DCP ou fichier HD',
-];
-
-const faq = [
-  { question: 'Combien coûte l\'inscription ?', answer: 'L\'inscription est entièrement gratuite pour tous les films.' },
-  { question: 'Puis-je soumettre plusieurs films ?', answer: 'Oui, vous pouvez soumettre plusieurs films, mais chaque film doit faire l\'objet d\'une inscription séparée.' },
-  { question: 'Quand serai-je informé de la sélection ?', answer: 'Les réalisateurs sélectionnés seront informés par email au plus tard le 15 mai 2026.' },
-  { question: 'Mon film doit-il être inédit ?', answer: 'Non, le film peut avoir été diffusé dans d\'autres festivals ou en ligne.' },
-  { question: 'Comment se passe la projection ?', answer: 'Les films sélectionnés seront projetés lors de la semaine du festival dans une salle de cinéma parisienne.' },
-  { question: 'Quels sont les prix décernés ?', answer: 'Le festival décerne plusieurs prix dont le Grand Prix, le Prix du Public et le Prix du Jury. Consultez la page Prix pour plus de détails.' },
-  { question: 'Dois-je être présent lors du festival ?', answer: 'La présence des réalisateurs sélectionnés est vivement encouragée mais pas obligatoire.' },
-  { question: 'Comment puis-je contacter l\'équipe ?', answer: 'Vous pouvez nous contacter via le formulaire de contact ou par email à inscriptions@ptitclap.fr' },
-];
-
 export default function Participate() {
   const { t } = useTranslation();
+
+  const keyDates = [
+    { date: '1er Mars 2026', eventKey: 'participate.date.open' },
+    { date: '30 Avril 2026', eventKey: 'participate.date.close' },
+    { date: '15 Mai 2026', eventKey: 'participate.date.selection' },
+    { date: '15 Juin 2026', eventKey: 'participate.date.ceremony' },
+  ];
+
+  const conditions = [
+    'participate.condition.1',
+    'participate.condition.2',
+    'participate.condition.3',
+    'participate.condition.4',
+    'participate.condition.5',
+    'participate.condition.6',
+  ];
+
+  const faq = [
+    { questionKey: 'participate.faq.cost.q', answerKey: 'participate.faq.cost.a' },
+    { questionKey: 'participate.faq.multiple.q', answerKey: 'participate.faq.multiple.a' },
+    { questionKey: 'participate.faq.notification.q', answerKey: 'participate.faq.notification.a' },
+    { questionKey: 'participate.faq.premiere.q', answerKey: 'participate.faq.premiere.a' },
+    { questionKey: 'participate.faq.screening.q', answerKey: 'participate.faq.screening.a' },
+    { questionKey: 'participate.faq.prizes.q', answerKey: 'participate.faq.prizes.a' },
+    { questionKey: 'participate.faq.presence.q', answerKey: 'participate.faq.presence.a' },
+    { questionKey: 'participate.faq.contact.q', answerKey: 'participate.faq.contact.a' },
+  ];
 
   return (
     <Layout>
@@ -71,7 +71,7 @@ export default function Participate() {
                       <div className="bg-accent/10 text-accent font-semibold px-3 py-1.5 rounded text-sm min-w-[120px] text-center">
                         {item.date}
                       </div>
-                      <div className="text-foreground">{item.event}</div>
+                      <div className="text-foreground">{t(item.eventKey)}</div>
                     </div>
                   ))}
                 </div>
@@ -88,10 +88,10 @@ export default function Participate() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {conditions.map((condition, index) => (
+                  {conditions.map((conditionKey, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 shrink-0" />
-                      <span className="text-foreground/80">{condition}</span>
+                      <span className="text-foreground/80">{t(conditionKey)}</span>
                     </li>
                   ))}
                 </ul>
@@ -111,9 +111,9 @@ export default function Participate() {
               <Accordion type="single" collapsible className="w-full">
                 {faq.map((item, index) => (
                   <AccordionItem key={index} value={`item-${index}`}>
-                    <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
+                    <AccordionTrigger className="text-left">{t(item.questionKey)}</AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      {item.answer}
+                      {t(item.answerKey)}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
