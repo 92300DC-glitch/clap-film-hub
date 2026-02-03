@@ -175,19 +175,11 @@ const translations: Record<Language, Record<string, string>> = {
     'press.contact': 'Contact presse',
     
     // Contact page
-    'contact.title': 'Nous Contacter',
-    'contact.subtitle': 'Une question ? N\'hésitez pas à nous contacter',
-    'contact.form.title': 'Envoyez-nous un message',
-    'contact.form.name': 'Nom',
-    'contact.form.name.placeholder': 'Votre nom',
-    'contact.form.email': 'Email',
-    'contact.form.email.placeholder': 'votre@email.fr',
-    'contact.form.subject': 'Sujet',
-    'contact.form.subject.placeholder': 'Objet de votre message',
-    'contact.form.message': 'Message',
-    'contact.form.message.placeholder': 'Votre message...',
-    'contact.form.success': 'Message envoyé avec succès',
-    'contact.form.success.desc': 'Nous vous répondrons dans les plus brefs délais.',
+    'contact.title': 'Contact',
+    'contact.subtitle': 'Une question ? Contactez-nous !',
+    'contact.info': 'Coordonnées',
+    'contact.phone': 'Téléphone',
+    'contact.address': 'Adresse',
     
     // Jury page
     'jury.title': 'Le Jury {year}',
@@ -369,22 +361,11 @@ const translations: Record<Language, Record<string, string>> = {
     'press.contact': 'Press Contact',
     
     // Contact page
-    'contact.title': 'Contact Us',
-    'contact.subtitle': 'Have a question? Don\'t hesitate to contact us',
-    'contact.form.title': 'Send us a message',
-    'contact.form.name': 'Name',
-    'contact.form.name.placeholder': 'Your name',
-    'contact.form.email': 'Email',
-    'contact.form.email.placeholder': 'your@email.com',
-    'contact.form.subject': 'Subject',
-    'contact.form.subject.placeholder': 'Subject of your message',
-    'contact.form.message': 'Message',
-    'contact.form.message.placeholder': 'Your message...',
-    'contact.form.success': 'Message sent successfully',
-    'contact.form.success.desc': 'We will get back to you as soon as possible.',
-    
-    // Common additions
-    'common.sending': 'Sending...',
+    'contact.title': 'Contact',
+    'contact.subtitle': 'Have a question? Contact us!',
+    'contact.info': 'Contact Information',
+    'contact.phone': 'Phone',
+    'contact.address': 'Address',
     
     // Jury page
     'jury.title': 'The {year} Jury',
