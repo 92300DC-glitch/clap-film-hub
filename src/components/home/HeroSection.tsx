@@ -59,10 +59,10 @@ export function HeroSection() {
           {/* CTAs - Brutalist buttons */}
           <div className="flex-col sm:flex-row gap-4 md:gap-6 py-0 pb-[50px] flex items-start justify-start">
             <Button asChild size="lg" className="bg-accent text-[hsl(220,80%,8%)] hover:bg-accent/90 text-base md:text-lg font-black uppercase tracking-wider px-8 md:px-12 py-6 md:py-8 h-auto border-4 border-accent hover:border-primary-foreground transition-all duration-150 hover:-translate-y-1 hover:translate-x-1 shadow-[4px_4px_0_hsl(45,100%,50%)] hover:shadow-[8px_8px_0_hsl(45,100%,50%)]">
-              <Link to="/participer">
+              <a href="https://shortfilmdepot.com/fr/festival/85" target="_blank" rel="noopener noreferrer">
                 {t('hero.cta.participate')}
                 <ArrowRight className="ml-3 h-5 w-5 md:h-6 md:w-6" />
-              </Link>
+              </a>
             </Button>
             <Button asChild variant="ghost" size="lg" className="border-2 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-[hsl(220,80%,8%)] text-base md:text-lg font-bold uppercase tracking-wider px-8 md:px-12 py-6 md:py-8 h-auto transition-all duration-150">
               <Link to="/films">
