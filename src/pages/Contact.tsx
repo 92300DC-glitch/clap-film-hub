@@ -25,18 +25,12 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Photo du festival - Style brutaliste */}
-            <div className="relative">
-              <div className="border-4 border-accent shadow-[8px_8px_0_hsl(var(--accent))]">
-                <img 
-                  src={contactImage} 
-                  alt="Festival Ptit Clap - Cérémonie"
-                  className="w-full h-[400px] lg:h-[500px] object-cover"
-                />
-              </div>
-              {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 border-4 border-accent bg-background z-10 flex items-center justify-center">
-                <span className="text-accent font-black text-2xl">2026</span>
-              </div>
+            <div className="border-4 border-accent shadow-[8px_8px_0_hsl(var(--accent))]">
+              <img 
+                src={contactImage} 
+                alt="Festival Ptit Clap - Cérémonie"
+                className="w-full h-[400px] lg:h-[500px] object-cover"
+              />
             </div>
 
             {/* Contact Info + Map */}
