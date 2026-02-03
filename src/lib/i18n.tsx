@@ -41,6 +41,7 @@ const translations: Record<Language, Record<string, string>> = {
     'section.jury.subtitle': 'Des professionnels passionnés au service du cinéma',
     'section.partners': 'Nos Partenaires',
     'section.partners.subtitle': 'Ils nous soutiennent et rendent le festival possible',
+    'section.partners.support': 'Ils nous soutiennent',
     'section.viewAll': 'Voir tout',
     
     // Footer
@@ -228,6 +229,7 @@ const translations: Record<Language, Record<string, string>> = {
     'section.jury.subtitle': 'Passionate professionals dedicated to cinema',
     'section.partners': 'Our Partners',
     'section.partners.subtitle': 'They support us and make the festival possible',
+    'section.partners.support': 'They support us',
     'section.viewAll': 'View all',
     
     // Footer
