@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, Mail, ArrowUpRight } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Mail, Phone } from 'lucide-react';
 import { useTranslation } from '@/lib/i18n';
 
 const socialLinks = [
@@ -105,19 +105,29 @@ export function Footer() {
           {/* Contact - Brutalist */}
           <div>
             <h3 className="font-black text-accent uppercase tracking-wider mb-6 text-sm">Contact</h3>
-            <a
-              href="mailto:contact@ptitclap.fr"
-              className="inline-flex items-center gap-3 text-foreground hover:text-accent transition-colors mb-6 group"
-            >
-              <div className="w-10 h-10 bg-muted border-2 border-foreground/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-all">
-                <Mail className="h-5 w-5" />
-              </div>
-              <span className="font-bold text-sm">contact@ptitclap.fr</span>
-              <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
-            <p className="text-muted-foreground text-sm border-l-4 border-muted pl-4">
-              Association Ptit Clap<br />
-              Paris, France
+            <div className="space-y-4">
+              <a
+                href="mailto:ptitclap@ville-levallois.fr"
+                className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group"
+              >
+                <div className="w-10 h-10 bg-muted border-2 border-foreground/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-all">
+                  <Mail className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">ptitclap@ville-levallois.fr</span>
+              </a>
+              <a
+                href="tel:+33147157677"
+                className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group"
+              >
+                <div className="w-10 h-10 bg-muted border-2 border-foreground/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-all">
+                  <Phone className="h-5 w-5" />
+                </div>
+                <span className="font-bold text-sm">+33 1 47 15 76 77</span>
+              </a>
+            </div>
+            <p className="text-muted-foreground text-sm border-l-4 border-muted pl-4 mt-4">
+              25 rue de la Gare<br />
+              92300 Levallois-Perret
             </p>
           </div>
         </div>
