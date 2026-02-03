@@ -9,10 +9,10 @@ export default function Participate() {
   const { t } = useTranslation();
 
   const keyDates = [
-    { date: '1er Mars 2026', eventKey: 'participate.date.open' },
-    { date: '30 Avril 2026', eventKey: 'participate.date.close' },
-    { date: '15 Mai 2026', eventKey: 'participate.date.selection' },
-    { date: '15 Juin 2026', eventKey: 'participate.date.ceremony' },
+    { date: '1er Janvier 2026', eventKey: 'participate.date.open' },
+    { date: '31 Mars 2026', eventKey: 'participate.date.close' },
+    { date: 'Mai 2026', eventKey: 'participate.date.selection' },
+    { date: '6 Juin 2026', eventKey: 'participate.date.ceremony' },
   ];
 
   const conditions = [
