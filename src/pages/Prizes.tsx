@@ -3,51 +3,51 @@ import { useTranslation } from '@/lib/i18n';
 import { Trophy, Award, Users, Star, Heart } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
-const prizes = [
-  {
-    name: 'Grand Prix',
-    amount: '3 000 €',
-    description: 'Décerné au meilleur court-métrage de la compétition officielle.',
-    sponsor: 'Région Île-de-France',
-    icon: Trophy,
-    featured: true,
-  },
-  {
-    name: 'Prix du Jury',
-    amount: '1 500 €',
-    description: 'Récompense un film remarqué pour sa qualité artistique et technique.',
-    sponsor: 'CNC',
-    icon: Award,
-    featured: false,
-  },
-  {
-    name: 'Prix du Public',
-    amount: '1 000 €',
-    description: 'Attribué par le vote du public pendant le festival.',
-    sponsor: 'Ville de Paris',
-    icon: Heart,
-    featured: false,
-  },
-  {
-    name: 'Prix de la Première Œuvre',
-    amount: '1 000 €',
-    description: 'Encourage un réalisateur pour son tout premier court-métrage.',
-    sponsor: 'SACD',
-    icon: Star,
-    featured: false,
-  },
-  {
-    name: 'Prix du Jury Jeune',
-    amount: '500 €',
-    description: 'Décerné par un jury composé de lycéens et étudiants en cinéma.',
-    sponsor: 'Académie de Paris',
-    icon: Users,
-    featured: false,
-  },
-];
-
 export default function Prizes() {
   const { t } = useTranslation();
+
+  const prizes = [
+    {
+      nameKey: 'prizes.grand',
+      amount: '3 000 €',
+      descKey: 'prizes.grand.desc',
+      sponsor: 'Région Île-de-France',
+      icon: Trophy,
+      featured: true,
+    },
+    {
+      nameKey: 'prizes.jury',
+      amount: '1 500 €',
+      descKey: 'prizes.jury.desc',
+      sponsor: 'CNC',
+      icon: Award,
+      featured: false,
+    },
+    {
+      nameKey: 'prizes.public',
+      amount: '1 000 €',
+      descKey: 'prizes.public.desc',
+      sponsor: 'Ville de Paris',
+      icon: Heart,
+      featured: false,
+    },
+    {
+      nameKey: 'prizes.first',
+      amount: '1 000 €',
+      descKey: 'prizes.first.desc',
+      sponsor: 'SACD',
+      icon: Star,
+      featured: false,
+    },
+    {
+      nameKey: 'prizes.young',
+      amount: '500 €',
+      descKey: 'prizes.young.desc',
+      sponsor: 'Académie de Paris',
+      icon: Users,
+      featured: false,
+    },
+  ];
 
   return (
     <Layout>
@@ -68,24 +68,24 @@ export default function Prizes() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {prizes.map((prize) => (
               <Card 
-                key={prize.name} 
+                key={prize.nameKey} 
                 className={prize.featured ? 'md:col-span-2 lg:col-span-1 ring-2 ring-accent shadow-gold' : ''}
               >
                 <CardHeader>
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${prize.featured ? 'bg-accent text-accent-foreground' : 'bg-primary/10 text-primary'}`}>
                     <prize.icon className="h-7 w-7" />
                   </div>
-                  <CardTitle className="text-xl">{prize.name}</CardTitle>
-                  <CardDescription>{prize.description}</CardDescription>
+                  <CardTitle className="text-xl">{t(prize.nameKey)}</CardTitle>
+                  <CardDescription>{t(prize.descKey)}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-end justify-between">
                     <div>
-                      <p className="text-sm text-muted-foreground">Dotation</p>
+                      <p className="text-sm text-muted-foreground">{t('prizes.amount')}</p>
                       <p className="text-2xl font-bold text-accent">{prize.amount}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-sm text-muted-foreground">Sponsor</p>
+                      <p className="text-sm text-muted-foreground">{t('prizes.sponsor')}</p>
                       <p className="font-medium text-foreground">{prize.sponsor}</p>
                     </div>
                   </div>

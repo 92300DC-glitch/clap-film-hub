@@ -37,7 +37,7 @@ export default function Ceremony() {
                   <p className="text-2xl font-bold text-foreground">Samedi 15 Juin 2026</p>
                   <p className="text-muted-foreground flex items-center gap-2 mt-2">
                     <Clock className="h-4 w-4" />
-                    19h00 - Cérémonie de remise des prix
+                    19h00 - {t('ceremony.time')}
                   </p>
                 </CardContent>
               </Card>
@@ -67,14 +67,14 @@ export default function Ceremony() {
                   <div className="flex items-start gap-3">
                     <Train className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
-                      <p className="font-medium">Métro</p>
+                      <p className="font-medium">{t('ceremony.metro')}</p>
                       <p className="text-sm text-muted-foreground">Ligne 8, 9 - Station Bonne Nouvelle</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Car className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
-                      <p className="font-medium">Parking</p>
+                      <p className="font-medium">{t('ceremony.parking')}</p>
                       <p className="text-sm text-muted-foreground">Parking Indigo - Boulevard Bonne Nouvelle</p>
                     </div>
                   </div>
@@ -90,10 +90,10 @@ export default function Ceremony() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    La cérémonie est ouverte au public. Réservez vos places dès maintenant !
+                    {t('ceremony.open')}
                   </p>
                   <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                    Réserver mes places
+                    {t('ceremony.book')}
                   </Button>
                 </CardContent>
               </Card>

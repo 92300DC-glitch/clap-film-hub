@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useI18n } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -21,10 +21,6 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { t, language, setLanguage } = useI18n();
   const location = useLocation();
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'fr' ? 'en' : 'fr');
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b-4 border-accent">
@@ -62,15 +58,32 @@ export function Header() {
 
           {/* Right Side */}
           <div className="flex items-center gap-3">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleLanguage}
-              className="text-foreground hover:bg-accent hover:text-accent-foreground gap-2 font-bold uppercase tracking-wider border-2 border-foreground/30 hover:border-accent"
-            >
-              <Globe className="h-4 w-4" />
-              <span>{language}</span>
-            </Button>
+            {/* Language Switcher */}
+            <div className="flex items-center border-2 border-foreground/30 rounded-md overflow-hidden">
+              <button
+                onClick={() => setLanguage('fr')}
+                className={cn(
+                  "px-3 py-1.5 text-sm font-bold uppercase tracking-wider transition-colors",
+                  language === 'fr'
+                    ? "bg-accent text-accent-foreground"
+                    : "text-foreground/70 hover:bg-muted"
+                )}
+              >
+                FR
+              </button>
+              <div className="w-px h-6 bg-foreground/30" />
+              <button
+                onClick={() => setLanguage('en')}
+                className={cn(
+                  "px-3 py-1.5 text-sm font-bold uppercase tracking-wider transition-colors",
+                  language === 'en'
+                    ? "bg-accent text-accent-foreground"
+                    : "text-foreground/70 hover:bg-muted"
+                )}
+              >
+                EN
+              </button>
+            </div>
 
             {/* Mobile Menu Button */}
             <Button
