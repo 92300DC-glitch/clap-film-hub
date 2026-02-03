@@ -11,13 +11,25 @@ export function HeroSection() {
     t
   } = useTranslation();
   return <section className="relative min-h-screen flex items-end overflow-hidden bg-[hsl(220,80%,8%)]">
-      {/* YouTube Video Background - Positioned asymmetrically */}
-      <div className="absolute top-0 right-0 w-[70%] h-[85%] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[hsl(220,80%,8%)] z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,80%,8%)] via-transparent to-transparent z-10" />
-        <iframe src="https://www.youtube.com/embed/weDPXZkooSQ?autoplay=1&mute=1&loop=1&playlist=weDPXZkooSQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] pointer-events-none grayscale-[30%] contrast-125" allow="autoplay; encrypted-media" allowFullScreen title="Festival background video" />
-        {/* Harsh geometric overlay */}
-        <div className="absolute inset-0 z-20 mix-blend-multiply bg-[hsl(220,70%,15%,0.4)]" />
+    {/* Video Background - Full coverage with brutalist overlay */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Video container - scales to cover entire area */}
+        <div className="absolute inset-0 scale-150 origin-center">
+          <iframe 
+            src="https://www.youtube.com/embed/weDPXZkooSQ?autoplay=1&mute=1&loop=1&playlist=weDPXZkooSQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1&vq=hd1080" 
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200vw] h-[200vh] min-w-full min-h-full pointer-events-none" 
+            allow="autoplay; encrypted-media" 
+            allowFullScreen 
+            title="Festival background video" 
+          />
+        </div>
+        {/* Gradient overlays for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,80%,8%)] via-[hsl(220,80%,8%,0.7)] to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,80%,8%)] via-[hsl(220,80%,8%,0.3)] to-[hsl(220,80%,8%,0.5)] z-10" />
+        {/* Brutalist color overlay */}
+        <div className="absolute inset-0 z-20 mix-blend-multiply bg-[hsl(220,70%,20%,0.5)]" />
+        {/* Grain texture effect */}
+        <div className="absolute inset-0 z-20 opacity-30 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
       </div>
 
 
