@@ -22,6 +22,8 @@ export default function Participate() {
     'participate.condition.4',
     'participate.condition.5',
     'participate.condition.6',
+    'participate.condition.7',
+    'participate.condition.8',
   ];
 
   const faq = [
