@@ -16,7 +16,7 @@ export function HeroSection() {
         {/* Video container - scales to cover entire area */}
         <div className="absolute inset-0 scale-150 origin-center">
           <iframe 
-            src="https://www.youtube.com/embed/weDPXZkooSQ?autoplay=1&mute=1&loop=1&playlist=weDPXZkooSQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1&vq=hd1080" 
+            src="https://www.youtube.com/embed/0E2_ioUr_VQ?autoplay=1&mute=1&loop=1&playlist=0E2_ioUr_VQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1&vq=hd1080"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200vw] h-[200vh] min-w-full min-h-full pointer-events-none" 
             allow="autoplay; encrypted-media" 
             allowFullScreen 
