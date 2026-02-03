@@ -54,8 +54,8 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold uppercase text-sm tracking-wider text-foreground/60 mb-1">{t('contact.phone')}</h3>
-                        <a href="tel:+33147157679" className="text-lg font-bold text-foreground hover:text-accent transition-colors">
-                          +33 1 47 15 76 79
+                        <a href="tel:+33147157677" className="text-lg font-bold text-foreground hover:text-accent transition-colors">
+                          +33 1 47 15 76 77
                         </a>
                       </div>
                     </div>
