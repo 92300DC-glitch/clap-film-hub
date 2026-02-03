@@ -165,6 +165,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Partners page
     'partners.title': 'Nos Partenaires',
     'partners.become': 'Devenir partenaire',
+    'partners.become.desc': 'Rejoignez notre réseau de partenaires et soutenez le court-métrage',
     'partners.form.name': 'Nom de l\'organisation',
     'partners.form.email': 'Email',
     'partners.form.message': 'Message',
@@ -352,6 +353,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Partners page
     'partners.title': 'Our Partners',
     'partners.become': 'Become a Partner',
+    'partners.become.desc': 'Join our partner network and support short films',
     'partners.form.name': 'Organization Name',
     'partners.form.email': 'Email',
     'partners.form.message': 'Message',
