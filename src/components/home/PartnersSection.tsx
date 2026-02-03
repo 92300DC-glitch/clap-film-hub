@@ -1,5 +1,4 @@
 import { useTranslation } from '@/lib/i18n';
-import { cn } from '@/lib/utils';
 
 // Import partner logos
 import logoHautsDeSeine from '@/assets/partners/hauts-de-seine.png';
@@ -12,19 +11,39 @@ import logoABE from '@/assets/partners/abe.png';
 import logoCogep from '@/assets/partners/cogep.png';
 import logoCommeJaime from '@/assets/partners/comme-jaime.png';
 import logoYass from '@/assets/partners/yass.png';
+import logoFG from '@/assets/partners/fg.png';
+import logoTooGood from '@/assets/partners/too-good.png';
+import logoShortFilmDepot from '@/assets/partners/shortfilmdepot.png';
+import logoSoOuest from '@/assets/partners/so-ouest.jpeg';
+import logoHappySenior from '@/assets/partners/happy-senior.jpg';
+import logoPatheLevallois from '@/assets/partners/pathe-levallois.png';
+import logo48hFilmProject from '@/assets/partners/48h-film-project.png';
+import logoFringaleCulturelle from '@/assets/partners/fringale-culturelle.jpg';
+import logoMarketOffice from '@/assets/partners/market-office.png';
+import logoStudyrama from '@/assets/partners/studyrama.png';
 
 // Partners data
 const partners = [
   { id: '1', name: 'Hauts-de-Seine - Le Département', logo: logoHautsDeSeine },
   { id: '2', name: 'Fondation BNP Paribas', logo: logoFondationBNP },
-  { id: '3', name: 'Devoteam', logo: logoDevoteam },
-  { id: '4', name: 'Comme J\'aime', logo: logoCommeJaime },
-  { id: '5', name: '3J Constructions', logo: logo3JConstructions },
-  { id: '6', name: 'Ambassador', logo: logoAmbassador },
-  { id: '7', name: 'Axialys', logo: logoAxialys },
-  { id: '8', name: 'ABE', logo: logoABE },
-  { id: '9', name: 'Cogep', logo: logoCogep },
-  { id: '10', name: 'Yass', logo: logoYass },
+  { id: '3', name: 'Pathé Levallois', logo: logoPatheLevallois },
+  { id: '4', name: 'Devoteam', logo: logoDevoteam },
+  { id: '5', name: 'Comme J\'aime', logo: logoCommeJaime },
+  { id: '6', name: 'Radio FG', logo: logoFG },
+  { id: '7', name: 'Too Good To Go', logo: logoTooGood },
+  { id: '8', name: 'Short Film Depot', logo: logoShortFilmDepot },
+  { id: '9', name: 'So Ouest', logo: logoSoOuest },
+  { id: '10', name: 'Happy Senior', logo: logoHappySenior },
+  { id: '11', name: '48 Hour Film Project', logo: logo48hFilmProject },
+  { id: '12', name: 'La Fringale Culturelle', logo: logoFringaleCulturelle },
+  { id: '13', name: '3J Constructions', logo: logo3JConstructions },
+  { id: '14', name: 'Ambassador', logo: logoAmbassador },
+  { id: '15', name: 'Axialys', logo: logoAxialys },
+  { id: '16', name: 'ABE', logo: logoABE },
+  { id: '17', name: 'Cogep', logo: logoCogep },
+  { id: '18', name: 'Yass', logo: logoYass },
+  { id: '19', name: 'Market Office', logo: logoMarketOffice },
+  { id: '20', name: 'Studyrama', logo: logoStudyrama },
 ];
 
 export function PartnersSection() {
