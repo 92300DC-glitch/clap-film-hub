@@ -32,8 +32,8 @@ export function HeroSection() {
 
 
       {/* Main Content - Brutalist Layout */}
-      <div className="container mx-auto px-4 pb-12 md:pb-20 relative z-20">
-        <div className="max-w-[95vw] md:max-w-none">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 pb-12 md:pb-20 relative z-20">
+        <div className="max-w-[90vw] md:max-w-none">
           {/* Massive Title - Breaking the grid */}
           <div className="relative mb-6 md:mb-8">
             <h1 className="text-[15vw] md:text-[12vw] lg:text-[10vw] font-black text-primary-foreground leading-[0.85] tracking-tighter uppercase">
