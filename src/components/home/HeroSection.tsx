@@ -14,13 +14,7 @@ export function HeroSection() {
     {/* Video Background - Full coverage with brutalist overlay */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Video container - covers entire area */}
-        <iframe 
-          src="https://www.youtube.com/embed/0E2_ioUr_VQ?autoplay=1&mute=1&loop=1&playlist=0E2_ioUr_VQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1&vq=hd1080" 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full pointer-events-none" 
-          allow="autoplay; encrypted-media" 
-          allowFullScreen 
-          title="Festival background video" 
-        />
+        <iframe src="https://www.youtube.com/embed/0E2_ioUr_VQ?autoplay=1&mute=1&loop=1&playlist=0E2_ioUr_VQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1&vq=hd1080" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full pointer-events-none" allow="autoplay; encrypted-media" allowFullScreen title="Festival background video" />
         {/* Gradient overlays for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,80%,8%)] via-[hsl(220,80%,8%,0.7)] to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,80%,8%)] via-[hsl(220,80%,8%,0.3)] to-[hsl(220,80%,8%,0.5)] z-10" />
@@ -32,7 +26,7 @@ export function HeroSection() {
 
 
       {/* Main Content - Brutalist Layout */}
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 pt-24 md:pt-32 pb-12 md:pb-20 relative z-20">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 pt-24 md:pt-32 pb-12 md:pb-20 relative z-20 py-[40px]">
         <div className="max-w-[90vw] md:max-w-none">
           {/* Massive Title - Breaking the grid */}
           <div className="relative mb-6 md:mb-8">
