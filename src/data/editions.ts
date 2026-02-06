@@ -229,4 +229,33 @@ export const editionsData: Record<string, EditionData> = {
     })),
     galleryCredit: 'Zohair Bijaoui (Ville de Levallois) et Pascal Potier (Visual Press Agency)',
   },
+  '2016': {
+    year: 2016,
+    number: 7,
+    jury: [
+      { name: 'Abel Jafri', role: 'Membre', photo: '/images/editions/2016/jury/abel-jafri.jpg' },
+      { name: 'Roland Nguyen', role: 'Membre', photo: '/images/editions/2016/jury/roland-nguyen.jpg' },
+      { name: 'Annabelle Milot', role: 'Membre', photo: '/images/editions/2016/jury/annabelle-milot.jpg' },
+      { name: 'Nadia Le Bihen Demmou', role: 'Membre', photo: '/images/editions/2016/jury/nadia-le-bihen-demmou.jpg' },
+      { name: 'Marie Jolivet', role: 'Membre', photo: '/images/editions/2016/jury/marie-jolivet.jpg' },
+      { name: 'Olivier Doran', role: 'Membre', photo: '/images/editions/2016/jury/olivier-doran.jpg' },
+      { name: 'Gary Kikoïne', role: 'Membre', photo: '/images/editions/2016/jury/gary-kikoine.jpg' },
+      { name: 'Olivier Chauvin', role: 'Membre', photo: '/images/editions/2016/jury/olivier-chauvin.jpg' },
+    ],
+    palmares: [
+      { prize: 'Grand Prix du Jury', film: 'Goût bacon', director: 'Bahia, Jennifer, Cirée, Maxence, Adil, Bilel, Yacine et Daniel', highlight: true },
+      { prize: '2ème Prix du Jury', film: 'Sonar', director: 'Mohammad Salam', highlight: true },
+      { prize: '3ème Prix du Jury', film: 'Paper Piano', director: 'Hyunki Min', highlight: true },
+      { prize: 'Prix du Public', film: 'À-bras-le-corps', director: 'Manon Gaurin', highlight: true },
+      { prize: 'Prix Mikros Image', film: 'An American Short Story', director: 'Antony Renault', highlight: true },
+      { prize: 'Prix des Enfants', film: 'Château de sable', director: 'Quentin Deleau, Lucie Foncelle, Maxime Goudal, Julien Paris et Sylvain Robert' },
+      { prize: 'Prix des Collégiens', film: 'Héros', director: 'Benoît Martin' },
+      { prize: 'Prix des Lycéens', film: 'Destino', director: 'Zangro' },
+    ],
+    gallery: Array.from({ length: 38 }, (_, i) => ({
+      src: `/images/editions/2016/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
+      alt: `Cérémonie édition 2016 - Photo ${i + 1}`,
+    })),
+    galleryCredit: 'Zohair Bijaoui (Ville de Levallois), Marceau Uguen et Visual Press Agency',
+  },
 };
