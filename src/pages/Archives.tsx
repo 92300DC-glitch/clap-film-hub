@@ -1,17 +1,30 @@
 import { Layout } from '@/components/layout/Layout';
 import { useTranslation } from '@/lib/i18n';
 import { Link } from 'react-router-dom';
-import { Calendar, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+
+import poster2015 from '@/assets/archives/2015.jpg';
+import poster2016 from '@/assets/archives/2016.jpg';
+import poster2017 from '@/assets/archives/2017.jpg';
+import poster2018 from '@/assets/archives/2018.jpeg';
+import poster2019 from '@/assets/archives/2019.jpg';
+import poster2020 from '@/assets/archives/2020.jpg';
+import poster2021 from '@/assets/archives/2021.jpg';
+import poster2022 from '@/assets/archives/2022.jpg';
+import poster2023 from '@/assets/archives/2023.jpg';
+import poster2024 from '@/assets/archives/2024.jpg';
 
 const editions = [
-  { year: 2025, number: 15, posterUrl: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=600&fit=crop', filmsCount: 45 },
-  { year: 2024, number: 14, posterUrl: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop', filmsCount: 42 },
-  { year: 2023, number: 13, posterUrl: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop', filmsCount: 38 },
-  { year: 2022, number: 12, posterUrl: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop', filmsCount: 40 },
-  { year: 2021, number: 11, posterUrl: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop', filmsCount: 35 },
-  { year: 2020, number: 10, posterUrl: 'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop', filmsCount: 30 },
-  { year: 2019, number: 9, posterUrl: 'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop', filmsCount: 36 },
-  { year: 2018, number: 8, posterUrl: 'https://images.unsplash.com/photo-1505775561242-727b7fba20f0?w=400&h=600&fit=crop', filmsCount: 32 },
+  { year: 2024, number: 15, posterUrl: poster2024 },
+  { year: 2023, number: 14, posterUrl: poster2023 },
+  { year: 2022, number: 13, posterUrl: poster2022 },
+  { year: 2021, number: 12, posterUrl: poster2021 },
+  { year: 2020, number: 11, posterUrl: poster2020 },
+  { year: 2019, number: 10, posterUrl: poster2019 },
+  { year: 2018, number: 9, posterUrl: poster2018 },
+  { year: 2017, number: 8, posterUrl: poster2017 },
+  { year: 2016, number: 7, posterUrl: poster2016 },
+  { year: 2015, number: 6, posterUrl: poster2015 },
 ];
 
 export default function Archives() {
