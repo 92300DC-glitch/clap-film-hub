@@ -258,4 +258,33 @@ export const editionsData: Record<string, EditionData> = {
     })),
     galleryCredit: 'Zohair Bijaoui (Ville de Levallois), Marceau Uguen et Visual Press Agency',
   },
+  '2017': {
+    year: 2017,
+    number: 8,
+    jury: [
+      { name: 'Raphaël Mezrahi', role: 'Président(e)', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Roland N\'Guyen', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Julien Cheminade', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Farida Ouchani', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Yamina Belarbi', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Juliet Lemonier', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Anne Luthaud', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Alex Guéry', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+    ],
+    palmares: [
+      { prize: 'Grand Prix du Jury', film: 'Coudre et Découdre', director: 'Ines Bensalem', highlight: true },
+      { prize: '2ème Prix du Jury', film: 'The Dark Box', director: 'Iness Rychlik', highlight: true },
+      { prize: '3ème Prix du Jury', film: 'Vous êtes beaux', director: 'Arthur & Ylane', highlight: true },
+      { prize: 'Prix du Public', film: 'Vous êtes beaux', director: 'Arthur & Ylane', highlight: true },
+      { prize: 'Prix Mikros Image', film: 'Luna', director: 'Flore Périvier', highlight: true },
+      { prize: 'Prix des Enfants', film: 'Forward march', director: 'Pierrick Barbin, Rimelle Khayat, Loïc Le Goff, Guillaume Lenoël et Garrick Rawlingson' },
+      { prize: 'Prix des Collégiens', film: 'La convention de Genève', director: 'Benoit Martin' },
+      { prize: 'Prix des Lycéens', film: 'Les frémissements du thé', director: 'Marc Fouchard' },
+    ],
+    gallery: Array.from({ length: 63 }, (_, i) => ({
+      src: `/images/editions/2017/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
+      alt: `Cérémonie édition 2017 - Photo ${i + 1}`,
+    })),
+    galleryCredit: 'Nadège Murez (Ville de Levallois), Marceau Uguen et Thierry Stefanopoulos (Visual Press Agency)',
+  },
 };
