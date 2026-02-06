@@ -19,6 +19,14 @@ export type GalleryPhoto = {
   alt: string;
 };
 
+export type InterviewEntry = {
+  name: string;
+  photo: string;
+  film?: string;
+  prize?: string;
+  content: { question: string; answer: string }[];
+};
+
 export type EditionData = {
   year: number;
   number: number;
@@ -26,6 +34,7 @@ export type EditionData = {
   palmares: PalmaresEntry[];
   gallery: GalleryPhoto[];
   galleryCredit?: string;
+  interviews?: InterviewEntry[];
 };
 
 export const editionsData: Record<string, EditionData> = {
