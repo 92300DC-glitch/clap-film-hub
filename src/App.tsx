@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import Films from "./pages/Films";
 import FilmDetail from "./pages/FilmDetail";
 import Participate from "./pages/Participate";
-import Jury from "./pages/Jury";
+
 import Ceremony from "./pages/Ceremony";
 import Prizes from "./pages/Prizes";
 import Education from "./pages/Education";
