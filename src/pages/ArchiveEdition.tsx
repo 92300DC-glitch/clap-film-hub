@@ -230,6 +230,11 @@ export default function ArchiveEdition() {
           </div>
         )}
 
+        {/* Interviews */}
+        {edition!.interviews && edition!.interviews.length > 0 && (
+          <InterviewsSection interviews={edition!.interviews} />
+        )}
+
         {/* Gallery */}
         {edition!.gallery.length > 0 && (
           <div>
