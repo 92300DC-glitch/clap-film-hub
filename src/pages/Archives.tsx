@@ -64,14 +64,10 @@ export default function Archives() {
                 </div>
 
                 <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
-                  #{edition.number}
+                  {edition.number}ème édition
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="flex items-center gap-2 text-white/60 text-sm mb-2">
-                    <Calendar className="h-4 w-4" />
-                    <span>{edition.filmsCount} {t('archives.films')}</span>
-                  </div>
                   <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
                     {t('archives.edition', { year: edition.year })}
                   </h3>
