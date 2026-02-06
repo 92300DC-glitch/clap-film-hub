@@ -366,12 +366,12 @@ export const editionsData: Record<string, EditionData> = {
     year: 2020,
     number: 11,
     jury: [
-      { name: 'Philippe du Janerand', role: 'Président(e)', photo: '/images/editions/2020/jury/jury-group.jpg' },
-      { name: 'Enya Baroux', role: 'Membre', photo: '/images/editions/2020/jury/jury-group.jpg' },
-      { name: 'Guillaume Clicquot', role: 'Membre', photo: '/images/editions/2020/jury/jury-group.jpg' },
-      { name: 'Carlos Carvalho Da Silva', role: 'Membre', photo: '/images/editions/2020/jury/jury-group.jpg' },
-      { name: 'Hélène Bizot', role: 'Membre', photo: '/images/editions/2020/jury/jury-group.jpg' },
-      { name: 'Martin Darondeau', role: 'Membre', photo: '/images/editions/2020/jury/jury-group.jpg' },
+      { name: 'Philippe du Janerand', role: 'Président(e)', photo: '/images/editions/2020/jury/philippe-du-janerand.jpg' },
+      { name: 'Enya Baroux', role: 'Membre', photo: '/images/editions/2020/jury/enya-baroux.jpg' },
+      { name: 'Guillaume Clicquot', role: 'Membre', photo: '/images/editions/2020/jury/guillaume-clicquot.jpg' },
+      { name: 'Carlos Carvalho Da Silva', role: 'Membre', photo: '/images/editions/2020/jury/carlos-carvalho.jpg' },
+      { name: 'Hélène Bizot', role: 'Membre', photo: '/images/editions/2020/jury/helene-bizot.jpg' },
+      { name: 'Martin Darondeau', role: 'Membre', photo: '/images/editions/2020/jury/martin-darondeau.jpg' },
     ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Couleur menthe à l\'eau', director: 'Lou Cheruy Zidi', highlight: true },
