@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { editionsData } from '@/data/editions';
 import { useState } from 'react';
+import { InterviewsSection } from '@/components/archives/InterviewsSection';
 
 // Import poster images
 import poster2010 from '@/assets/archives/2010.jpg';
