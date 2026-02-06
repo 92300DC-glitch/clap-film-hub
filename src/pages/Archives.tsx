@@ -3,6 +3,11 @@ import { useTranslation } from '@/lib/i18n';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
+import poster2010 from '@/assets/archives/2010.jpg';
+import poster2011 from '@/assets/archives/2011.jpg';
+import poster2012 from '@/assets/archives/2012.jpg';
+import poster2013 from '@/assets/archives/2013.jpg';
+import poster2014 from '@/assets/archives/2014.jpg';
 import poster2015 from '@/assets/archives/2015.jpg';
 import poster2016 from '@/assets/archives/2016.jpg';
 import poster2017 from '@/assets/archives/2017.jpg';
@@ -25,6 +30,11 @@ const editions = [
   { year: 2017, number: 8, posterUrl: poster2017 },
   { year: 2016, number: 7, posterUrl: poster2016 },
   { year: 2015, number: 6, posterUrl: poster2015 },
+  { year: 2014, number: 5, posterUrl: poster2014 },
+  { year: 2013, number: 4, posterUrl: poster2013 },
+  { year: 2012, number: 3, posterUrl: poster2012 },
+  { year: 2011, number: 2, posterUrl: poster2011 },
+  { year: 2010, number: 1, posterUrl: poster2010 },
 ];
 
 export default function Archives() {
