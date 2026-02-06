@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import Films from "./pages/Films";
 import FilmDetail from "./pages/FilmDetail";
 import Participate from "./pages/Participate";
-import Jury from "./pages/Jury";
+
 import Ceremony from "./pages/Ceremony";
 import Prizes from "./pages/Prizes";
 import Education from "./pages/Education";
@@ -33,7 +33,7 @@ const App = () => (
             <Route path="/films" element={<Films />} />
             <Route path="/films/:slug" element={<FilmDetail />} />
             <Route path="/participer" element={<Participate />} />
-            <Route path="/jury" element={<Jury />} />
+            
             <Route path="/ceremonie" element={<Ceremony />} />
             <Route path="/prix" element={<Prizes />} />
             <Route path="/education" element={<Education />} />
