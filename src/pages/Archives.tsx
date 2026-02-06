@@ -74,7 +74,7 @@ export default function Archives() {
                 </div>
 
                 <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
-                  {edition.number}ème édition
+                  {edition.number === 1 ? '1ère' : `${edition.number}ème`} édition
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
