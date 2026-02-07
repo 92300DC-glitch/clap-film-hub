@@ -31,7 +31,7 @@ export function FeaturedFilms() {
               Sélection
             </span>
             <h2 className="text-4xl lg:text-6xl font-black text-foreground uppercase tracking-tighter leading-[0.9]">
-              {t('section.featuredFilms')}
+              Ptit Clap : les précédentes éditions
             </h2>
             <div className="w-24 h-1 bg-accent mt-6" />
           </div>
