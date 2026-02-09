@@ -206,6 +206,7 @@ export default function ArchiveEdition() {
                         {edition!.jury.filter(m => m.role === 'Président(e)').length > 1 ? 'Présidents du Jury' : 'Président(e) du Jury'}
                       </Badge>
                       <h3 className="text-2xl font-bold text-foreground">{member.name}</h3>
+                      {member.description && <p className="text-muted-foreground">{member.description}</p>}
                     </div>
                   </div>
                 ))}
