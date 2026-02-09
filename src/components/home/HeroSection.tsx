@@ -13,8 +13,8 @@ export function HeroSection() {
   return <section className="relative min-h-screen flex items-end overflow-hidden bg-[hsl(220,80%,8%)]">
     {/* Video Background - Full coverage with brutalist overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Video container - covers entire area */}
-        <iframe src="https://www.youtube.com/embed/0E2_ioUr_VQ?autoplay=1&mute=1&loop=1&playlist=0E2_ioUr_VQ&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&playsinline=1&vq=hd1080" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full pointer-events-none" allow="autoplay; encrypted-media" allowFullScreen title="Festival background video" />
+        {/* Background image */}
+        <img src="/images/hero-bg.jpg" alt="Festival Ptit Clap" className="absolute inset-0 w-full h-full object-cover" />
         {/* Gradient overlays for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,80%,8%)] via-[hsl(220,80%,8%,0.7)] to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,80%,8%)] via-[hsl(220,80%,8%,0.3)] to-[hsl(220,80%,8%,0.5)] z-10" />
