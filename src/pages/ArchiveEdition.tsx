@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Users, Camera, Award, Star } from 'lucide-react';
+import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { editionsData } from '@/data/editions';
@@ -233,6 +233,32 @@ export default function ArchiveEdition() {
         {/* Interviews */}
         {edition!.interviews && edition!.interviews.length > 0 && (
           <InterviewsSection interviews={edition!.interviews} />
+        )}
+
+        {/* Classement */}
+        {edition!.ranking && edition!.ranking.length > 0 && (
+          <div className="mb-20">
+            <h2 className="text-3xl font-black uppercase tracking-tight mb-8 flex items-center gap-3">
+              <ListOrdered className="h-7 w-7 text-accent" />
+              Classement des {edition!.ranking.length} premiers
+            </h2>
+            <div className="space-y-1">
+              {edition!.ranking.map((entry) => (
+                <div
+                  key={entry.rank}
+                  className={`flex items-center gap-4 p-3 border border-border ${entry.rank <= 3 ? 'bg-accent/5 border-accent/30' : 'bg-card'}`}
+                >
+                  <span className={`font-black text-lg w-8 text-center ${entry.rank <= 3 ? 'text-accent' : 'text-muted-foreground'}`}>
+                    {entry.rank}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <span className="font-bold text-foreground">{entry.film}</span>
+                    <span className="text-muted-foreground"> de {entry.director}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
 
         {/* Gallery */}
