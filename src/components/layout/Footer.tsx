@@ -150,12 +150,6 @@ export function Footer() {
               >
                 {t('footer.privacy')}
               </Link>
-              <button
-                className="text-muted-foreground hover:text-accent text-sm font-medium uppercase tracking-wider transition-colors"
-                onClick={() => {/* TODO: Open cookie consent */}}
-              >
-                {t('footer.cookies')}
-              </button>
             </div>
           </div>
         </div>
