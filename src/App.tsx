@@ -41,6 +41,7 @@ const App = () => (
             <Route path="/archives" element={<Archives />} />
             <Route path="/archives/:year" element={<ArchiveEdition />} />
             <Route path="/confidentialite" element={<PrivacyPolicy />} />
+            <Route path="/mentions-legales" element={<LegalNotice />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
