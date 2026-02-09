@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Archives from "./pages/Archives";
 import ArchiveEdition from "./pages/ArchiveEdition";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import LegalNotice from "./pages/LegalNotice";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
