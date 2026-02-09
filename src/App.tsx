@@ -15,6 +15,7 @@ import Press from "./pages/Press";
 import Contact from "./pages/Contact";
 import Archives from "./pages/Archives";
 import ArchiveEdition from "./pages/ArchiveEdition";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
