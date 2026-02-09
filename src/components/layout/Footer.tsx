@@ -10,7 +10,6 @@ const socialLinks = [
 ];
 
 const quickLinks = [
-  { key: 'nav.films', href: '/films' },
   { key: 'nav.participate', href: '/participer' },
   
   { key: 'nav.archives', href: '/archives' },

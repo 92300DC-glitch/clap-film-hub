@@ -5,8 +5,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { I18nProvider } from "@/lib/i18n";
 import Index from "./pages/Index";
-import Films from "./pages/Films";
-import FilmDetail from "./pages/FilmDetail";
 import Participate from "./pages/Participate";
 
 import Ceremony from "./pages/Ceremony";
@@ -30,8 +28,6 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/films" element={<Films />} />
-            <Route path="/films/:slug" element={<FilmDetail />} />
             <Route path="/participer" element={<Participate />} />
             
             <Route path="/ceremonie" element={<Ceremony />} />
