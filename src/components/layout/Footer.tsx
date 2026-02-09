@@ -3,10 +3,8 @@ import { Facebook, Instagram, Twitter, Youtube, Mail, Phone } from 'lucide-react
 import { useTranslation } from '@/lib/i18n';
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://facebook.com/ptitclap', label: 'Facebook' },
-  { icon: Instagram, href: 'https://instagram.com/ptitclap', label: 'Instagram' },
-  { icon: Twitter, href: 'https://twitter.com/ptitclap', label: 'Twitter' },
-  { icon: Youtube, href: 'https://youtube.com/ptitclap', label: 'YouTube' },
+  { icon: Facebook, href: 'https://www.facebook.com/ptitclap/', label: 'Facebook' },
+  { icon: Instagram, href: 'https://www.instagram.com/ptitclap/', label: 'Instagram' },
 ];
 
 const quickLinks = [
