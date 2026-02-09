@@ -641,12 +641,12 @@ export const editionsData: Record<string, EditionData> = {
     year: 2024,
     number: 15,
     jury: [
-      { name: 'Alix Bénézech', role: 'Président(e)', photo: '/images/editions/2024/jury/alix-benezech.png' },
-      { name: 'Karolyne Leibovici', role: 'Membre', photo: '/images/editions/2024/jury/karolyne-leibovici.png' },
-      { name: 'Vanessa Djian', role: 'Membre', photo: '/images/editions/2024/jury/vanessa-djian.png' },
-      { name: 'Zoran Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/zoran-boukherma.png' },
-      { name: 'Ludovic Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/ludovic-boukherma.png' },
-      { name: 'Mehdi Omaïs', role: 'Membre', photo: '/images/editions/2024/jury/mehdi-omais.png' },
+      { name: 'Alix Bénézech', role: 'Président(e)', photo: '/images/editions/2024/jury/alix-benezech.png', description: 'Comédienne' },
+      { name: 'Karolyne Leibovici', role: 'Membre', photo: '/images/editions/2024/jury/karolyne-leibovici.png', description: 'Publiciste, Fondatrice de "Girls support Girls"' },
+      { name: 'Vanessa Djian', role: 'Membre', photo: '/images/editions/2024/jury/vanessa-djian.png', description: 'Productrice, Fondatrice de "Girls support Girls"' },
+      { name: 'Zoran Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/zoran-boukherma.png', description: 'Scénariste, Réalisateur' },
+      { name: 'Ludovic Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/ludovic-boukherma.png', description: 'Scénariste, Réalisateur' },
+      { name: 'Mehdi Omaïs', role: 'Membre', photo: '/images/editions/2024/jury/mehdi-omais.png', description: 'Écrivain, Journaliste cinéma' },
     ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Cosmos', director: 'Arnaud Sapin', highlight: true },
