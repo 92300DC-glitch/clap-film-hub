@@ -5,6 +5,7 @@ export type JuryMember = {
   name: string;
   role: 'Président(e)' | 'Membre';
   photo: string;
+  description?: string;
 };
 
 export type PalmaresEntry = {
@@ -561,14 +562,14 @@ export const editionsData: Record<string, EditionData> = {
     year: 2023,
     number: 14,
     jury: [
-      { name: 'Radu Mihaileanu', role: 'Président(e)', photo: '/images/editions/2023/jury/radu-mihaileanu.png' },
-      { name: 'Marie-Jo Khojandi', role: 'Membre', photo: '/images/editions/2023/jury/marie-jo-khojandi.png' },
-      { name: 'Nicolas Bary', role: 'Membre', photo: '/images/editions/2023/jury/nicolas-bary.png' },
-      { name: 'Vanessa Guide', role: 'Membre', photo: '/images/editions/2023/jury/vanessa-guide.png' },
-      { name: 'Pierre Charpilloz', role: 'Membre', photo: '/images/editions/2023/jury/pierre-charpilloz.png' },
-      { name: 'Salomé Braun', role: 'Membre', photo: '/images/editions/2023/jury/salome-braun.png' },
-      { name: 'Alexandre Dino', role: 'Membre', photo: '/images/editions/2023/jury/alexandre-dino.png' },
-      { name: 'Emmanuelle Jacobson-Roques', role: 'Membre', photo: '/images/editions/2023/jury/emmanuelle-jacobson-roques.png' },
+      { name: 'Radu Mihaileanu', role: 'Président(e)', photo: '/images/editions/2023/jury/radu-mihaileanu.png', description: 'Réalisateur, scénariste' },
+      { name: 'Marie-Jo Khojandi', role: 'Membre', photo: '/images/editions/2023/jury/marie-jo-khojandi.png', description: 'Comédienne' },
+      { name: 'Nicolas Bary', role: 'Membre', photo: '/images/editions/2023/jury/nicolas-bary.png', description: 'Réalisateur, producteur, scénariste' },
+      { name: 'Vanessa Guide', role: 'Membre', photo: '/images/editions/2023/jury/vanessa-guide.png', description: 'Comédienne' },
+      { name: 'Pierre Charpilloz', role: 'Membre', photo: '/images/editions/2023/jury/pierre-charpilloz.png', description: 'Journaliste, critique cinéma' },
+      { name: 'Salomé Braun', role: 'Membre', photo: '/images/editions/2023/jury/salome-braun.png', description: 'Comédienne' },
+      { name: 'Alexandre Dino', role: 'Membre', photo: '/images/editions/2023/jury/alexandre-dino.png', description: 'Responsable Nikon Film Festival' },
+      { name: 'Emmanuelle Jacobson-Roques', role: 'Membre', photo: '/images/editions/2023/jury/emmanuelle-jacobson-roques.png', description: 'Photographe de plateau' },
     ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Behind Closed Doors', director: 'Masha Mollenhauer', highlight: true },
@@ -640,12 +641,12 @@ export const editionsData: Record<string, EditionData> = {
     year: 2024,
     number: 15,
     jury: [
-      { name: 'Alix Bénézech', role: 'Président(e)', photo: '/images/editions/2024/jury/alix-benezech.png' },
-      { name: 'Karolyne Leibovici', role: 'Membre', photo: '/images/editions/2024/jury/karolyne-leibovici.png' },
-      { name: 'Vanessa Djian', role: 'Membre', photo: '/images/editions/2024/jury/vanessa-djian.png' },
-      { name: 'Zoran Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/zoran-boukherma.png' },
-      { name: 'Ludovic Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/ludovic-boukherma.png' },
-      { name: 'Mehdi Omaïs', role: 'Membre', photo: '/images/editions/2024/jury/mehdi-omais.png' },
+      { name: 'Alix Bénézech', role: 'Président(e)', photo: '/images/editions/2024/jury/alix-benezech.png', description: 'Comédienne' },
+      { name: 'Karolyne Leibovici', role: 'Membre', photo: '/images/editions/2024/jury/karolyne-leibovici.png', description: 'Publiciste, Fondatrice de "Girls support Girls"' },
+      { name: 'Vanessa Djian', role: 'Membre', photo: '/images/editions/2024/jury/vanessa-djian.png', description: 'Productrice, Fondatrice de "Girls support Girls"' },
+      { name: 'Zoran Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/zoran-boukherma.png', description: 'Scénariste, Réalisateur' },
+      { name: 'Ludovic Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/ludovic-boukherma.png', description: 'Scénariste, Réalisateur' },
+      { name: 'Mehdi Omaïs', role: 'Membre', photo: '/images/editions/2024/jury/mehdi-omais.png', description: 'Écrivain, Journaliste cinéma' },
     ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Cosmos', director: 'Arnaud Sapin', highlight: true },
