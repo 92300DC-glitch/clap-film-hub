@@ -66,12 +66,17 @@ export default function Press() {
                     {t('press.contact')}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="font-medium text-foreground">Sophie Martin</p>
-                  <p className="text-muted-foreground text-sm">Attachée de presse</p>
-                  <a href="mailto:presse@ptitclap.fr" className="text-accent hover:underline text-sm">
-                    presse@ptitclap.fr
+                <CardContent className="space-y-2">
+                  <a href="mailto:ptitclap@ville-levallois.fr" className="text-accent hover:underline text-sm block">
+                    ptitclap@ville-levallois.fr
                   </a>
+                  <a href="tel:+33147157677" className="text-foreground hover:text-accent text-sm block">
+                    +33 1 47 15 76 77
+                  </a>
+                  <p className="text-muted-foreground text-sm">
+                    25 rue de la Gare<br />
+                    92300 Levallois-Perret
+                  </p>
                 </CardContent>
               </Card>
             </div>
