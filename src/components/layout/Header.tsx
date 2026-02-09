@@ -7,7 +7,6 @@ import { cn } from '@/lib/utils';
 import logoPtitClap from '@/assets/logo-ptit-clap.png';
 
 const navItems = [
-  { key: 'nav.films', href: '/films' },
   { key: 'nav.participate', href: '/participer' },
   
   { key: 'nav.ceremony', href: '/ceremonie' },
