@@ -27,6 +27,12 @@ export type InterviewEntry = {
   content: { question: string; answer: string }[];
 };
 
+export type RankingEntry = {
+  rank: number;
+  film: string;
+  director: string;
+};
+
 export type EditionData = {
   year: number;
   number: number;
@@ -35,6 +41,7 @@ export type EditionData = {
   gallery: GalleryPhoto[];
   galleryCredit?: string;
   interviews?: InterviewEntry[];
+  ranking?: RankingEntry[];
 };
 
 export const editionsData: Record<string, EditionData> = {
