@@ -639,7 +639,14 @@ export const editionsData: Record<string, EditionData> = {
   '2024': {
     year: 2024,
     number: 15,
-    jury: [],
+    jury: [
+      { name: 'Alix Bénézech', role: 'Président(e)', photo: '/images/editions/2024/jury/alix-benezech.png' },
+      { name: 'Karolyne Leibovici', role: 'Membre', photo: '/images/editions/2024/jury/karolyne-leibovici.png' },
+      { name: 'Vanessa Djian', role: 'Membre', photo: '/images/editions/2024/jury/vanessa-djian.png' },
+      { name: 'Zoran Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/zoran-boukherma.png' },
+      { name: 'Ludovic Boukherma', role: 'Membre', photo: '/images/editions/2024/jury/ludovic-boukherma.png' },
+      { name: 'Mehdi Omaïs', role: 'Membre', photo: '/images/editions/2024/jury/mehdi-omais.png' },
+    ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Cosmos', director: 'Arnaud Sapin', highlight: true },
       { prize: '2e Prix du Jury', film: 'Allez ma fille', director: 'Chloé Jouannet', highlight: true },
