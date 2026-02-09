@@ -5,6 +5,7 @@ export type JuryMember = {
   name: string;
   role: 'Président(e)' | 'Membre';
   photo: string;
+  description?: string;
 };
 
 export type PalmaresEntry = {
