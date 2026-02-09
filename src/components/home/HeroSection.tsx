@@ -56,11 +56,6 @@ export function HeroSection() {
                 <ArrowRight className="ml-3 h-5 w-5 md:h-6 md:w-6" />
               </a>
             </Button>
-            <Button asChild variant="ghost" size="lg" className="border-2 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-[hsl(220,80%,8%)] text-base md:text-lg font-bold uppercase tracking-wider px-8 md:px-12 py-6 md:py-8 h-auto transition-all duration-150">
-              <Link to="/films">
-                {t('hero.cta.discover')}
-              </Link>
-            </Button>
           </div>
         </div>
       </div>
