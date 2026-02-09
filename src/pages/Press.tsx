@@ -50,13 +50,10 @@ export default function Press() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 gap-2">
+                  <p className="text-muted-foreground text-sm italic">Bientôt disponible</p>
+                  <Button disabled className="w-full bg-accent text-accent-foreground hover:bg-accent/90 gap-2">
                     <Download className="h-4 w-4" />
-                    Kit presse 2026 (PDF, 5 Mo)
-                  </Button>
-                  <Button variant="outline" className="w-full gap-2">
-                    <Download className="h-4 w-4" />
-                    Logos et visuels (ZIP, 12 Mo)
+                    Télécharger le kit presse
                   </Button>
                 </CardContent>
               </Card>
