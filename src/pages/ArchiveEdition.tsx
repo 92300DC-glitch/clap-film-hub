@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Users, Camera, Award, Star } from 'lucide-react';
+import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { editionsData } from '@/data/editions';
