@@ -560,7 +560,16 @@ export const editionsData: Record<string, EditionData> = {
   '2023': {
     year: 2023,
     number: 14,
-    jury: [],
+    jury: [
+      { name: 'Radu Mihaileanu', role: 'Président(e)', photo: '/images/editions/2023/jury/radu-mihaileanu.png' },
+      { name: 'Marie-Jo Khojandi', role: 'Membre', photo: '/images/editions/2023/jury/marie-jo-khojandi.png' },
+      { name: 'Nicolas Bary', role: 'Membre', photo: '/images/editions/2023/jury/nicolas-bary.png' },
+      { name: 'Vanessa Guide', role: 'Membre', photo: '/images/editions/2023/jury/vanessa-guide.png' },
+      { name: 'Pierre Charpilloz', role: 'Membre', photo: '/images/editions/2023/jury/pierre-charpilloz.png' },
+      { name: 'Salomé Braun', role: 'Membre', photo: '/images/editions/2023/jury/salome-braun.png' },
+      { name: 'Alexandre Dino', role: 'Membre', photo: '/images/editions/2023/jury/alexandre-dino.png' },
+      { name: 'Emmanuelle Jacobson-Roques', role: 'Membre', photo: '/images/editions/2023/jury/emmanuelle-jacobson-roques.png' },
+    ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Behind Closed Doors', director: 'Masha Mollenhauer', highlight: true },
       { prize: '2e Prix du Jury', film: 'Murs Porteurs', director: 'Jan Wallborn', highlight: true },
