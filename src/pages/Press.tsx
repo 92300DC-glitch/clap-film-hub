@@ -50,13 +50,10 @@ export default function Press() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 gap-2">
+                  <p className="text-muted-foreground text-sm italic">Bientôt disponible</p>
+                  <Button disabled className="w-full bg-accent text-accent-foreground hover:bg-accent/90 gap-2">
                     <Download className="h-4 w-4" />
-                    Kit presse 2026 (PDF, 5 Mo)
-                  </Button>
-                  <Button variant="outline" className="w-full gap-2">
-                    <Download className="h-4 w-4" />
-                    Logos et visuels (ZIP, 12 Mo)
+                    Télécharger le kit presse
                   </Button>
                 </CardContent>
               </Card>
@@ -69,12 +66,17 @@ export default function Press() {
                     {t('press.contact')}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="font-medium text-foreground">Sophie Martin</p>
-                  <p className="text-muted-foreground text-sm">Attachée de presse</p>
-                  <a href="mailto:presse@ptitclap.fr" className="text-accent hover:underline text-sm">
-                    presse@ptitclap.fr
+                <CardContent className="space-y-2">
+                  <a href="mailto:ptitclap@ville-levallois.fr" className="text-accent hover:underline text-sm block">
+                    ptitclap@ville-levallois.fr
                   </a>
+                  <a href="tel:+33147157677" className="text-foreground hover:text-accent text-sm block">
+                    +33 1 47 15 76 77
+                  </a>
+                  <p className="text-muted-foreground text-sm">
+                    25 rue de la Gare<br />
+                    92300 Levallois-Perret
+                  </p>
                 </CardContent>
               </Card>
             </div>
