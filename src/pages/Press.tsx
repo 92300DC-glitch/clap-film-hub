@@ -11,11 +11,6 @@ const pressReleases = [
   { date: '15 Mai 2025', title: 'Sélection officielle 2025 dévoilée', url: '#' },
 ];
 
-const mediaArticles = [
-  { source: 'Télérama', title: 'Ptit Clap, pépinière de talents', url: '#' },
-  { source: 'Les Inrocks', title: 'Le court-métrage à l\'honneur', url: '#' },
-  { source: 'Konbini', title: '10 courts à ne pas manquer', url: '#' },
-];
 
 export default function Press() {
   const { t } = useTranslation();
@@ -111,26 +106,6 @@ export default function Press() {
                 </div>
               </div>
 
-              {/* In the Media */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6">Ils parlent de nous</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {mediaArticles.map((article, index) => (
-                    <a
-                      key={index}
-                      href={article.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block p-4 bg-card rounded-lg border hover:shadow-md transition-shadow group"
-                    >
-                      <p className="text-sm text-accent font-medium mb-1">{article.source}</p>
-                      <h3 className="font-medium text-foreground group-hover:text-accent transition-colors">
-                        {article.title}
-                      </h3>
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
