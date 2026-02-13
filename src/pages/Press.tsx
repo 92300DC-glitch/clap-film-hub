@@ -67,8 +67,9 @@ export default function Press() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <a href="mailto:ptitclap@ville-levallois.fr" className="text-accent hover:underline text-sm block">
-                    ptitclap@ville-levallois.fr
+                  <p className="text-foreground text-sm font-medium">Isabelle Pauvert</p>
+                  <a href="mailto:ipauvert@ville-levallois.fr" className="text-accent hover:underline text-sm block">
+                    ipauvert@ville-levallois.fr
                   </a>
                   <a href="tel:+33147157677" className="text-foreground hover:text-accent text-sm block">
                     +33 1 47 15 76 77
