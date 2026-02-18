@@ -24,26 +24,26 @@ import logoStudyrama from '@/assets/partners/studyrama.png';
 
 // Partners data
 const partners = [
-  { id: '1', name: 'Hauts-de-Seine - Le Département', logo: logoHautsDeSeine },
-  { id: '2', name: 'Fondation BNP Paribas', logo: logoFondationBNP },
-  { id: '3', name: 'Pathé Levallois', logo: logoPatheLevallois },
-  { id: '4', name: 'Devoteam', logo: logoDevoteam },
-  { id: '5', name: 'Comme J\'aime', logo: logoCommeJaime },
-  { id: '6', name: 'Radio FG', logo: logoFG },
-  { id: '7', name: 'Too Good To Go', logo: logoTooGood },
-  { id: '8', name: 'Short Film Depot', logo: logoShortFilmDepot },
-  { id: '9', name: 'So Ouest', logo: logoSoOuest },
-  { id: '10', name: 'Happy Senior', logo: logoHappySenior },
-  { id: '11', name: '48 Hour Film Project', logo: logo48hFilmProject },
-  { id: '12', name: 'La Fringale Culturelle', logo: logoFringaleCulturelle },
-  { id: '13', name: '3J Constructions', logo: logo3JConstructions },
-  { id: '14', name: 'Ambassador', logo: logoAmbassador },
-  { id: '15', name: 'Axialys', logo: logoAxialys },
-  { id: '16', name: 'ABE', logo: logoABE },
-  { id: '17', name: 'Cogep', logo: logoCogep },
-  { id: '18', name: 'Yass', logo: logoYass },
-  { id: '19', name: 'Market Office', logo: logoMarketOffice },
-  { id: '20', name: 'Studyrama', logo: logoStudyrama },
+  { id: '1', name: 'Hauts-de-Seine - Le Département', logo: logoHautsDeSeine, url: 'https://www.hauts-de-seine.fr' },
+  { id: '2', name: 'Fondation BNP Paribas', logo: logoFondationBNP, url: 'https://fondation.bnpparibas' },
+  { id: '3', name: 'Pathé Levallois', logo: logoPatheLevallois, url: 'https://www.pathe.fr/cinemas/cinema-pathe-levallois' },
+  { id: '4', name: 'Devoteam', logo: logoDevoteam, url: 'https://www.devoteam.com' },
+  { id: '5', name: 'Comme J\'aime', logo: logoCommeJaime, url: 'https://www.commejaime.fr' },
+  { id: '6', name: 'Radio FG', logo: logoFG, url: 'https://www.radiofg.com' },
+  { id: '7', name: 'Too Good To Go', logo: logoTooGood, url: null },
+  { id: '8', name: 'Short Film Depot', logo: logoShortFilmDepot, url: 'https://shortfilmdepot.com/fr' },
+  { id: '9', name: 'So Ouest', logo: logoSoOuest, url: 'https://www.westfield.com/fr/france/soouest' },
+  { id: '10', name: 'Happy Senior', logo: logoHappySenior, url: 'https://www.residencehappysenior.fr/residences/levallois/' },
+  { id: '11', name: '48 Hour Film Project', logo: logo48hFilmProject, url: 'https://www.48hourfilm.com' },
+  { id: '12', name: 'La Fringale Culturelle', logo: logoFringaleCulturelle, url: 'https://www.lafringaleculturelle.fr' },
+  { id: '13', name: '3J Constructions', logo: logo3JConstructions, url: null },
+  { id: '14', name: 'Ambassador', logo: logoAmbassador, url: 'https://www.ambassador.fr' },
+  { id: '15', name: 'Axialys', logo: logoAxialys, url: 'https://www.axialys.com' },
+  { id: '16', name: 'ABE Courtage', logo: logoABE, url: 'https://www.abecourtage.com' },
+  { id: '17', name: 'Cogep', logo: logoCogep, url: 'https://www.cogep.fr' },
+  { id: '18', name: 'Yass', logo: logoYass, url: 'https://www.drinkyass.com' },
+  { id: '19', name: 'Market Office', logo: logoMarketOffice, url: 'https://www.market-office.com' },
+  { id: '20', name: 'Studyrama', logo: logoStudyrama, url: 'https://www.studyrama.com' },
 ];
 
 export function PartnersSection() {
@@ -68,20 +68,36 @@ export function PartnersSection() {
 
         {/* Partners Grid - Brutalist */}
         <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
-          {partners.map((partner) => (
-            <div
-              key={partner.id}
-              className="group relative p-4 lg:p-6 bg-white border-2 border-transparent hover:border-accent transition-all duration-150 hover:-translate-y-1 hover:shadow-brutal"
-              title={partner.name}
-            >
+          {partners.map((partner) => {
+            const inner = (
               <img
                 src={partner.logo}
                 alt={partner.name}
                 className="h-12 lg:h-16 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all duration-300"
                 loading="lazy"
               />
-            </div>
-          ))}
+            );
+            return partner.url ? (
+              <a
+                key={partner.id}
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative p-4 lg:p-6 bg-white border-2 border-transparent hover:border-accent transition-all duration-150 hover:-translate-y-1 hover:shadow-brutal"
+                title={partner.name}
+              >
+                {inner}
+              </a>
+            ) : (
+              <div
+                key={partner.id}
+                className="group relative p-4 lg:p-6 bg-white border-2 border-transparent"
+                title={partner.name}
+              >
+                {inner}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
