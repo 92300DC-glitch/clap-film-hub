@@ -37,7 +37,7 @@ const partners = [
   { id: '4', name: 'Devoteam', logo: logoDevoteam, url: 'https://www.devoteam.com' },
   { id: '5', name: 'Comme J\'aime', logo: logoCommeJaime, url: 'https://www.commejaime.fr' },
   { id: '6', name: 'Radio FG', logo: logoFG, url: 'https://www.radiofg.com' },
-  { id: '7', name: 'Too Good To Go', logo: logoTooGood, url: null },
+  { id: '7', name: 'Too Good To Go', logo: logoTooGood, url: 'https://www.toogood.fr' },
   { id: '8', name: 'Short Film Depot', logo: logoShortFilmDepot, url: 'https://shortfilmdepot.com/fr' },
   { id: '9', name: 'So Ouest', logo: logoSoOuest, url: 'https://www.westfield.com/fr/france/soouest' },
   { id: '10', name: 'Happy Senior', logo: logoHappySenior, url: 'https://www.residencehappysenior.fr/residences/levallois/' },
