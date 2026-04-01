@@ -35,7 +35,7 @@ const posters: Record<string, string> = {
 const editionNumbers: Record<string, number> = {
   '2010': 1, '2011': 2, '2012': 3, '2013': 4, '2014': 5,
   '2015': 6, '2016': 7, '2017': 8, '2018': 9, '2019': 10,
-  '2020': 11, '2021': 12, '2022': 13, '2023': 14, '2024': 15,
+  '2020': 11, '2021': 12, '2022': 13, '2023': 14, '2024': 15, '2025': 16,
 };
 
 export default function ArchiveEdition() {
