@@ -104,6 +104,12 @@ export const editionsData: Record<string, EditionData> = {
       { prize: '3ème Prix du Jury', film: 'Shy', director: 'Alex Guéry', highlight: true },
       { prize: 'Prix du Public', film: 'La vieillesse dans la peau', director: 'Harry Bozino', highlight: true },
       { prize: 'Prix d\'encouragement', film: 'Lol et les lolies', director: 'Romy Trajman', highlight: true },
+      { film: 'La cerise sur le gâteau', director: 'Anne-Laure Chauvet', highlight: false },
+      { film: 'Pépita', director: 'Princia Car', highlight: false },
+      { film: 'Les Oublieux', director: 'Gaël Houdin', highlight: false },
+      { film: '5150 Hold', director: 'Shirley Monsarrat', highlight: false },
+      { film: 'Paule & Cie', director: 'Maëlle Ferré', highlight: false },
+      { film: 'Il faut qu\'on parle', director: 'Raphaël Kenzey', highlight: false },
     ],
     gallery: Array.from({ length: 16 }, (_, i) => ({
       src: `/images/editions/2011/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
