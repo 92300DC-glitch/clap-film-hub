@@ -216,7 +216,7 @@ export const editionsData: Record<string, EditionData> = {
       { name: 'Laurent Artufel', role: 'Membre', photo: '/images/editions/2013/jury/laurent-artufel.jpg' },
       { name: 'Matthieu Gonet', role: 'Membre', photo: '/images/editions/2013/jury/matthieu-gonet.jpg' },
       { name: 'David Proux', role: 'Membre', photo: '/images/editions/2013/jury/david-proux.jpg' },
-      { name: 'Frédéric Groetschel', role: 'Membre', photo: '/images/editions/2013/jury/philippe-lellouche.jpg' },
+      
       { name: 'Gauthier Jurgensen', role: 'Membre', photo: '/images/editions/2013/jury/gauthier-jurgensen.jpg' },
       { name: 'Nathalie Corré', role: 'Membre', photo: '/images/editions/2013/jury/nathalie-corre.jpg' },
       { name: 'Yann Brolli', role: 'Membre', photo: '/images/editions/2013/jury/yann-brolli.jpg' },
