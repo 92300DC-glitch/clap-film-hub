@@ -174,15 +174,14 @@ export const editionsData: Record<string, EditionData> = {
     number: 3,
     jury: [
       { name: 'Arnaud Lemort', role: 'Président(e)', photo: '/images/editions/2012/jury/arnaud-lemort.jpg' },
-      { name: 'Catherine Habib', role: 'Membre', photo: '/images/editions/2012/jury/celine-kamina.jpg' },
+      { name: 'Catherine Habib', role: 'Membre', photo: '/images/editions/2011/jury/catherine-habib.jpg' },
       { name: 'Stéphane Metzger', role: 'Membre', photo: '/images/editions/2012/jury/stephane-metzger.jpg' },
       { name: 'Jennifer Devoldère', role: 'Membre', photo: '/images/editions/2012/jury/jennifer-devoldere.jpg' },
       { name: 'Gyselle Soares', role: 'Membre', photo: '/images/editions/2012/jury/gyselle-soares.jpg' },
       { name: 'Mathieu Ouillon', role: 'Membre', photo: '/images/editions/2012/jury/mathieu-ouillon.jpg' },
       { name: 'Sébastien Courivaud', role: 'Membre', photo: '/images/editions/2012/jury/sebastien-courivaud.jpg' },
-      { name: 'Frédéric Groetschel', role: 'Membre', photo: '/images/editions/2012/jury/arnaud-lemort.jpg' },
       { name: 'Zaven Najjar', role: 'Membre', photo: '/images/editions/2012/jury/zaven-najjar.jpg' },
-      { name: 'Marion Dumas', role: 'Membre', photo: '/images/editions/2012/jury/arnaud-lemort.jpg' },
+      { name: 'Marion Dumas', role: 'Membre', photo: '/images/editions/2011/jury/marion-dumas.jpg' },
       { name: 'Céline Kamina', role: 'Membre', photo: '/images/editions/2012/jury/celine-kamina.jpg' },
     ],
     palmares: [
