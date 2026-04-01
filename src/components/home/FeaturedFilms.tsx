@@ -3,16 +3,16 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/i18n';
 
+import poster2025 from '@/assets/archives/2025.png';
 import poster2024 from '@/assets/archives/2024.jpg';
 import poster2023 from '@/assets/archives/2023.jpg';
 import poster2022 from '@/assets/archives/2022.jpg';
-import poster2021 from '@/assets/archives/2021.jpg';
 
 const featuredEditions = [
+  { year: 2025, number: 16, posterUrl: poster2025 },
   { year: 2024, number: 15, posterUrl: poster2024 },
   { year: 2023, number: 14, posterUrl: poster2023 },
   { year: 2022, number: 13, posterUrl: poster2022 },
-  { year: 2021, number: 12, posterUrl: poster2021 },
 ];
 
 export function FeaturedFilms() {
