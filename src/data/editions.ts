@@ -216,7 +216,7 @@ export const editionsData: Record<string, EditionData> = {
       { name: 'Laurent Artufel', role: 'Membre', photo: '/images/editions/2013/jury/laurent-artufel.jpg' },
       { name: 'Matthieu Gonet', role: 'Membre', photo: '/images/editions/2013/jury/matthieu-gonet.jpg' },
       { name: 'David Proux', role: 'Membre', photo: '/images/editions/2013/jury/david-proux.jpg' },
-      { name: 'Frédéric Groetschel', role: 'Membre', photo: '/images/editions/2013/jury/philippe-lellouche.jpg' },
+      
       { name: 'Gauthier Jurgensen', role: 'Membre', photo: '/images/editions/2013/jury/gauthier-jurgensen.jpg' },
       { name: 'Nathalie Corré', role: 'Membre', photo: '/images/editions/2013/jury/nathalie-corre.jpg' },
       { name: 'Yann Brolli', role: 'Membre', photo: '/images/editions/2013/jury/yann-brolli.jpg' },
@@ -230,9 +230,9 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix du Public', film: 'As it used to be', director: 'Clément Gonzalez', highlight: true },
       { prize: 'Prix Coup de Cœur Cinéma Epson', film: 'Mourir en paix', director: 'Jimmy Woha-Woha', highlight: true },
       { prize: 'Prix Dailymotion', film: 'Post-it war', director: 'Jérémie Normand', highlight: true },
-      { prize: 'Prix des Enfants', film: 'Pourquoi pas Blanche-Neige pendant qu\'on y est', director: 'Joël Olivier' },
-      { prize: 'Prix des Collégiens', film: 'Titi', director: 'Hugues Espinasse' },
-      { prize: 'Prix des Lycéens', film: 'L\'Accordeur', director: 'Olivier Treiner' },
+      { prize: 'Prix des Enfants', film: 'Pourquoi pas Blanche-Neige pendant qu\'on y est', director: 'Joël Olivier', highlight: false },
+      { prize: 'Prix des Collégiens', film: 'Titi', director: 'Hugues Espinasse', highlight: false },
+      { prize: 'Prix des Lycéens', film: 'L\'Accordeur', director: 'Olivier Treiner', highlight: false },
     ],
     gallery: Array.from({ length: 16 }, (_, i) => ({
       src: `/images/editions/2013/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
