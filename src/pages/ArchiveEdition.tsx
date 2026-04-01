@@ -23,18 +23,19 @@ import poster2021 from '@/assets/archives/2021.jpg';
 import poster2022 from '@/assets/archives/2022.jpg';
 import poster2023 from '@/assets/archives/2023.jpg';
 import poster2024 from '@/assets/archives/2024.jpg';
+import poster2025 from '@/assets/archives/2025.png';
 
 const posters: Record<string, string> = {
   '2010': poster2010, '2011': poster2011, '2012': poster2012, '2013': poster2013,
   '2014': poster2014, '2015': poster2015, '2016': poster2016, '2017': poster2017,
   '2018': poster2018, '2019': poster2019, '2020': poster2020, '2021': poster2021,
-  '2022': poster2022, '2023': poster2023, '2024': poster2024,
+  '2022': poster2022, '2023': poster2023, '2024': poster2024, '2025': poster2025,
 };
 
 const editionNumbers: Record<string, number> = {
   '2010': 1, '2011': 2, '2012': 3, '2013': 4, '2014': 5,
   '2015': 6, '2016': 7, '2017': 8, '2018': 9, '2019': 10,
-  '2020': 11, '2021': 12, '2022': 13, '2023': 14, '2024': 15,
+  '2020': 11, '2021': 12, '2022': 13, '2023': 14, '2024': 15, '2025': 16,
 };
 
 export default function ArchiveEdition() {
