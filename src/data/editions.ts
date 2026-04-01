@@ -230,9 +230,9 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix du Public', film: 'As it used to be', director: 'Clément Gonzalez', highlight: true },
       { prize: 'Prix Coup de Cœur Cinéma Epson', film: 'Mourir en paix', director: 'Jimmy Woha-Woha', highlight: true },
       { prize: 'Prix Dailymotion', film: 'Post-it war', director: 'Jérémie Normand', highlight: true },
-      { prize: 'Prix des Enfants', film: 'Pourquoi pas Blanche-Neige pendant qu\'on y est', director: 'Joël Olivier' },
-      { prize: 'Prix des Collégiens', film: 'Titi', director: 'Hugues Espinasse' },
-      { prize: 'Prix des Lycéens', film: 'L\'Accordeur', director: 'Olivier Treiner' },
+      { prize: 'Prix des Enfants', film: 'Pourquoi pas Blanche-Neige pendant qu\'on y est', director: 'Joël Olivier', highlight: false },
+      { prize: 'Prix des Collégiens', film: 'Titi', director: 'Hugues Espinasse', highlight: false },
+      { prize: 'Prix des Lycéens', film: 'L\'Accordeur', director: 'Olivier Treiner', highlight: false },
     ],
     gallery: Array.from({ length: 16 }, (_, i) => ({
       src: `/images/editions/2013/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
