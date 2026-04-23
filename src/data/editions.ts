@@ -358,9 +358,9 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix des Arts et Techniques – Mikros Image', film: 'The lost and the last', director: 'Valentin Bordeau', highlight: true },
       { prize: 'Prix Coup de Cœur Cinéma Epson', film: 'Perrault, La Fontaine, Mon Cul !', director: 'Hugo P. Thomas, Zoran et Ludovic Boukherma', highlight: true },
       { prize: 'Prix de la Musique de Films – UCMF', film: 'Jumble up', director: 'Léo Karmann (musique Sylvain Morizet)', highlight: true },
-      { prize: 'Prix des Enfants', film: 'Crevette', director: 'Sophie Galibert' },
-      { prize: 'Prix des Collégiens', film: 'Règlement de conte', director: 'Fatma Benyoub' },
-      { prize: 'Prix des Lycéens', film: 'Yantra', director: 'Jérémy Minui' },
+      { prize: 'Prix des Enfants', film: 'Crevette', director: 'Sophie Galibert', highlight: true },
+      { prize: 'Prix des Collégiens', film: 'Règlement de conte', director: 'Fatma Benyoub', highlight: true },
+      { prize: 'Prix des Lycéens', film: 'Yantra', director: 'Jérémy Minui', highlight: true },
     ],
     gallery: Array.from({ length: 63 }, (_, i) => ({
       src: `/images/editions/2015/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
