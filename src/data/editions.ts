@@ -271,6 +271,12 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix des Enfants', film: 'La course', director: 'Koreen Valard', highlight: true },
       { prize: 'Prix des Collégiens', film: 'La marque des champions', director: 'Stéphane Kazandjian', highlight: true },
       { prize: 'Prix des Lycéens', film: 'Loup y-es-tu ?', director: 'Baptiste Gondouin & Johann Dionnet', highlight: true },
+      { prize: 'Finaliste', film: 'Ironias de la vida', director: 'Ignacio Sepulveda', highlight: false },
+      { prize: 'Finaliste', film: 'Du sable dans les pompes', director: 'Clément Gonzalez', highlight: false },
+      { prize: 'Finaliste', film: 'Lune de guerre', director: 'Thomas Mercillon', highlight: false },
+      { prize: 'Finaliste', film: 'Adopte mon père', director: 'Mickaël Sultan', highlight: false },
+      { prize: 'Finaliste', film: 'Drôle de guerre', director: 'Simon Panay', highlight: false },
+      { prize: 'Finaliste', film: 'Fanny', director: 'Arthur Molinier', highlight: false },
     ],
     gallery: Array.from({ length: 47 }, (_, i) => ({
       src: `/images/editions/2014/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
