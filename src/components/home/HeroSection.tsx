@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/lib/i18n';
 import { Countdown } from './Countdown';
 
-// Call for films deadline: March 31, 2026 at 23:59:59
-const NEXT_FESTIVAL_DATE = new Date('2026-03-31T23:59:59');
+// Ceremony date: June 6, 2026 at 14:00
+const NEXT_FESTIVAL_DATE = new Date('2026-06-06T14:00:00');
 export function HeroSection() {
   const {
     t
