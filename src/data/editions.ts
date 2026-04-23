@@ -268,9 +268,9 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix des Arts et Techniques – Mikros Image', film: 'Le doigt d\'honneur', director: 'Malika Pellicioli', highlight: true },
       { prize: 'Prix Coup de Cœur Cinéma Epson', film: 'Premier métro', director: 'Hugo P. Thomas', highlight: true },
       { prize: 'Prix d\'interprétation', film: 'Le rêve indien', director: 'Assia Bellaaquoul (Oulaya Amamra)', highlight: true },
-      { prize: 'Prix des Enfants', film: 'La course', director: 'Koreen Valard' },
-      { prize: 'Prix des Collégiens', film: 'Loup y-es tu ?', director: 'Baptiste Gondouin & Johann Dionnet' },
-      { prize: 'Prix des Lycéens', film: 'La marque des champions', director: 'Stéphane Kazandjian' },
+      { prize: 'Prix des Enfants', film: 'La course', director: 'Koreen Valard', highlight: true },
+      { prize: 'Prix des Collégiens', film: 'La marque des champions', director: 'Stéphane Kazandjian', highlight: true },
+      { prize: 'Prix des Lycéens', film: 'Loup y-es-tu ?', director: 'Baptiste Gondouin & Johann Dionnet', highlight: true },
     ],
     gallery: Array.from({ length: 47 }, (_, i) => ({
       src: `/images/editions/2014/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
