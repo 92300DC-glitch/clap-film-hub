@@ -26,6 +26,7 @@ export type InterviewEntry = {
   film?: string;
   prize?: string;
   content: { question: string; answer: string }[];
+  images?: { src: string; caption?: string }[];
 };
 
 export type RankingEntry = {
@@ -726,6 +727,44 @@ export const editionsData: Record<string, EditionData> = {
           {
             question: 'Merci chaleureusement à Matthieu pour cet échange !',
             answer: 'Propos recueillis par Charlotte Calvat',
+          },
+        ],
+      },
+      {
+        name: 'Marceau Uguen',
+        photo: '/images/editions/2018/interviews/marceau-uguen.jpg',
+        film: 'Memoria',
+        prize: 'Article',
+        content: [
+          {
+            question: 'Marceau Uguen, 20 ans et déjà réalisateur de son premier long métrage',
+            answer: "Marceau Uguen (à gauche sur la photographie) est un fou du septième art. Il a commencé en filmant à l'aide d'une GoPro ses figures de skate et il a aujourd'hui déjà réalisé plusieurs courts métrages et quelques clips. Le jeune homme est par ailleurs bénévole depuis deux ans sur le Festival Ptit Clap. Nous avions envie de mettre en lumière le fruit de son travail…",
+          },
+          {
+            question: 'Le projet Memoria',
+            answer: "Memoria est un projet né de Marceau Uguen et Bastien Gros. À eux deux, ils ont commencé à écrire et imaginer le scénario de ce film d'1h45. Après avoir rassemblé une équipe motivée de 35 personnes (élèves, amis et professionnels), ils se sont lancés sur le tournage de ce film dramatique et profond. Plusieurs thèmes sont abordés dans ce long-métrage tels que la catharsis, les violences conjugales et filiales, ainsi que l'essoufflement progressif des femmes qui subissent ces violences. Le sujet est d'actualité !",
+          },
+          {
+            question: 'Synopsis',
+            answer: "Lili (6 ans) vient de perdre sa mère Yana (32 ans), une grande pianiste virtuose. Son père Paul (38 ans) ne parvient pas à lui annoncer clairement le décès ni à faire son deuil. Lili se plonge alors dans l'apprentissage de l'instrument avec son père, mais ce dernier développe une relation malsaine avec sa fille, retrouvant sa femme à travers elle…",
+          },
+          {
+            question: 'Un financement participatif réussi',
+            answer: "Le début du tournage a commencé en septembre, et Marceau et toute l'équipe ont décidé de lancer un financement participatif depuis la plateforme Ulule. L'objectif était d'atteindre 7 000 € sur les 20 000 € du budget prévu, et c'est chose faite ! À l'heure actuelle 8 000 € ont été collectés.\n\nLe tournage se fera principalement sur Paris cette année et sur 4 périodes. On est impatients d'avoir des nouvelles de cette aventure !",
+          },
+          {
+            question: "L'équipe du film",
+            answer: "Marceau s'occupe de la réalisation et est entouré principalement de :\n\n• Bastien Gros et Marianne Bouin à la production\n• Jérémy Marnotte, conseiller artistique image\n• Joffrey Robert, 1er assistant réalisateur\n• Jonas Chomé, 2ème assistant réalisateur et directeur de casting\n• Charlène Abramson, storyboardeuse et scripte\n• Pierre Amiard et Anastasia Lobbé, régisseurs et monteurs\n• Thomas Renaux, directeur de la photo\n• Nils Borowski et Thomas Kowalski au montage son",
+          },
+          {
+            question: 'Pour aller plus loin',
+            answer: 'Propos recueillis par Charlotte Calvat',
+          },
+        ],
+        images: [
+          {
+            src: '/images/editions/2018/interviews/marceau-uguen-memoria-poster.jpg',
+            caption: 'Première affiche designée par Louis-Alexandre Leleux',
           },
         ],
       },

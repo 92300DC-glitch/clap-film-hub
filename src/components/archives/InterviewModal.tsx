@@ -55,6 +55,20 @@ export function InterviewModal({ interview, open, onOpenChange }: InterviewModal
                   <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{qa.answer}</p>
                 </div>
               ))}
+              {interview.images && interview.images.length > 0 && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  {interview.images.map((img, i) => (
+                    <figure key={i} className="border-2 border-border bg-muted">
+                      <img src={img.src} alt={img.caption || interview.name} className="w-full h-auto object-contain" />
+                      {img.caption && (
+                        <figcaption className="text-xs text-muted-foreground p-2 text-center">
+                          {img.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              )}
             </div>
           </ScrollArea>
         </div>
