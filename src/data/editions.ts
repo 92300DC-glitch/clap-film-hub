@@ -1006,12 +1006,19 @@ export const editionsData: Record<string, EditionData> = {
       { prize: '2ème Prix du Jury', film: 'Les Méduses', director: 'Manon Gaurin', highlight: true },
       { prize: '3ème Prix du Jury', film: 'En attendant Hafez', director: 'Joséphine Simonian', highlight: true },
       { prize: 'Prix du Public', film: 'Les Méduses', director: 'Manon Gaurin', highlight: true },
-      { prize: 'Mention spéciale d\'interprétation féminine', film: 'La jungle', director: 'Victor Ohmer (Tia Diagne)', highlight: true },
-      { prize: 'Mention spéciale d\'interprétation masculine', film: 'Lola', director: 'Adrien Guedra-Degeorges, Maxime Azzopardi, Joséphine Habif et Léo Jean-Deschenes (Pierre Samuel)', highlight: true },
+      { prize: "Prix d'Interprétation Féminine", film: 'La jungle', director: 'Tia Diagne', highlight: true },
+      { prize: "Prix d'Interprétation Masculine", film: 'Lola', director: 'Pierre Samuel', highlight: true },
       { prize: 'Prix des Enfants', film: 'Hors-piste', director: 'Oscar Mallet, Léo Brunel, Loris Cavalier et Camille Jalabert' },
       { prize: 'Prix des Collégiens', film: 'Un entretien', director: 'Julien Patry' },
       { prize: 'Prix des Lycéens', film: 'Nefta football club', director: 'Yves Piat' },
     ],
+    finalistsPresentation: {
+      finalists: [
+        { name: 'Aurélien Rapatel', film: 'Le rire des étoiles', bio: '' },
+        { name: 'Alex Cvetkov', film: 'Scout', bio: '' },
+        { name: 'Lucas Besnier et Raphaël Duléry', film: 'Le monopole du cœur', bio: '' },
+      ],
+    },
     gallery: Array.from({ length: 24 }, (_, i) => ({
       src: `/images/editions/2019/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
       alt: `Cérémonie édition 2019 - Photo ${i + 1}`,
