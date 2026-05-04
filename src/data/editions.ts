@@ -1081,6 +1081,14 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix des Collégiens', film: 'Les filles sages ne conduisent pas la nuit', director: 'Marianne Schmadel' },
       { prize: 'Prix des Lycéens', film: 'PD', director: 'Olivier Lallart' },
     ],
+    finalistsPresentation: {
+      finalists: [
+        { name: 'Justine Goaziou et Samantha Vié', film: 'Moustaco', bio: '' },
+        { name: 'Erica Terenziani', film: 'Margherita', bio: '' },
+        { name: 'Lee Kang Ryeoung', film: 'Pie are squared', bio: '' },
+        { name: 'Amal Al-Muftah', film: "Sh'hab", bio: '' },
+      ],
+    },
     gallery: [],
     interviews: [
       {
