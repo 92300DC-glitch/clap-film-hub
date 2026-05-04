@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered, Film, Sparkles } from 'lucide-react';
+import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered, Film, Sparkles, UserCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { editionsData } from '@/data/editions';
@@ -311,6 +311,51 @@ export default function ArchiveEdition() {
                         ))}
                       </ul>
                     </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {edition!.finalistsPresentation && (
+              <div className="mb-16">
+                <h2 className="text-3xl font-black uppercase tracking-tight mb-6 flex items-center gap-3">
+                  <UserCircle2 className="h-7 w-7 text-accent" />
+                  Présentation des finalistes {edition!.year}
+                </h2>
+                {edition!.finalistsPresentation.intro && (
+                  <p className="text-foreground mb-8 max-w-4xl">
+                    {edition!.finalistsPresentation.intro}
+                  </p>
+                )}
+                <div className="space-y-6">
+                  {edition!.finalistsPresentation.finalists.map((f, i) => (
+                    <article key={i} className="border-4 border-border bg-card p-5 grid grid-cols-1 md:grid-cols-12 gap-5">
+                      {f.portrait && (
+                        <div className="md:col-span-3">
+                          <img
+                            src={f.portrait}
+                            alt={f.name}
+                            className="w-full aspect-[3/4] object-cover border-2 border-border bg-muted"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                      <div className={f.portrait && f.poster ? 'md:col-span-6' : f.portrait || f.poster ? 'md:col-span-9' : 'md:col-span-12'}>
+                        <p className="text-xs uppercase tracking-wide text-accent font-bold mb-1">Finaliste</p>
+                        <h3 className="text-xl font-black text-foreground mb-1">{f.name}</h3>
+                        <p className="text-sm italic text-muted-foreground mb-3">{f.film}</p>
+                        <p className="text-sm text-foreground whitespace-pre-line leading-relaxed">{f.bio}</p>
+                      </div>
+                      {f.poster && (
+                        <div className="md:col-span-3">
+                          <img
+                            src={f.poster}
+                            alt={`Affiche ${f.film}`}
+                            className="w-full aspect-[2/3] object-cover border-2 border-border bg-muted"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                    </article>
                   ))}
                 </div>
               </div>
