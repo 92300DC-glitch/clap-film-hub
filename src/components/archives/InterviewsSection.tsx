@@ -14,7 +14,7 @@ export function InterviewsSection({ interviews }: InterviewsSectionProps) {
     <div className="mb-20">
       <h2 className="text-3xl font-black uppercase tracking-tight mb-8 flex items-center gap-3">
         <Mic className="h-7 w-7 text-accent" />
-        Interviews
+        Interviews et Articles
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
