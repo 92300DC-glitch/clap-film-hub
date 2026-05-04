@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered, Film } from 'lucide-react';
+import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered, Film, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { editionsData } from '@/data/editions';
@@ -282,6 +282,36 @@ export default function ArchiveEdition() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
+                </div>
+              </div>
+            )}
+            {edition!.youthCompetition && (
+              <div className="mb-16">
+                <h2 className="text-3xl font-black uppercase tracking-tight mb-6 flex items-center gap-3">
+                  <Sparkles className="h-7 w-7 text-accent" />
+                  Compétition des Prix Jeunesse {edition!.year}
+                </h2>
+                {edition!.youthCompetition.intro && (
+                  <p className="text-foreground mb-8 max-w-4xl whitespace-pre-line">
+                    {edition!.youthCompetition.intro}
+                  </p>
+                )}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {edition!.youthCompetition.categories.map((cat, ci) => (
+                    <div key={ci} className="border-4 border-border bg-card p-5">
+                      <h3 className="text-lg font-black uppercase tracking-tight mb-4 text-accent">
+                        {cat.prize}
+                      </h3>
+                      <ul className="space-y-3">
+                        {cat.films.map((f, fi) => (
+                          <li key={fi} className="border-l-2 border-accent/40 pl-3">
+                            <p className="font-bold text-foreground leading-tight">{f.title}</p>
+                            <p className="text-sm text-muted-foreground">de {f.director}</p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
