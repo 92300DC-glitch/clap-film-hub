@@ -42,6 +42,9 @@ export function InterviewsSection({ interviews }: InterviewsSectionProps) {
             {interview.film && (
               <p className="text-xs text-muted-foreground mt-0.5 italic">{interview.film}</p>
             )}
+            {!interview.film && interview.role && (
+              <p className="text-xs text-muted-foreground mt-0.5 italic">{interview.role}</p>
+            )}
           </button>
         ))}
       </div>
