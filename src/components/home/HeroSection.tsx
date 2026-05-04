@@ -51,8 +51,8 @@ export function HeroSection() {
           {/* CTAs - Brutalist buttons */}
           <div className="flex-col sm:flex-row gap-4 md:gap-6 py-0 pb-[50px] flex items-start justify-start">
             <Button asChild size="lg" className="bg-accent text-[hsl(220,80%,8%)] hover:bg-accent/90 text-base md:text-lg font-black uppercase tracking-wider px-8 md:px-12 py-6 md:py-8 h-auto border-4 border-accent hover:border-primary-foreground transition-all duration-150 hover:-translate-y-1 hover:translate-x-1 shadow-[4px_4px_0_hsl(45,100%,50%)] hover:shadow-[8px_8px_0_hsl(45,100%,50%)]">
-              <a href="https://shortfilmdepot.com/fr/festival/85" target="_blank" rel="noopener noreferrer">
-                {t('hero.cta.participate')}
+              <a href="https://www.eventbrite.fr/e/billets-ceremonie-officielle-du-festival-ptit-clap-1982436637348?aff=oddtdtcreator&_gl=1*ougq5g*_up*MQ..*_ga*MTEyNzEzMzc5My4xNzc3OTA1MzAy*_ga_TQVES5V6SH*czE3Nzc5MDUzMDAkbzEkZzAkdDE3Nzc5MDUzMDAkajYwJGwwJGgw&keep_tld=true" target="_blank" rel="noopener noreferrer">
+                S'inscrire à la cérémonie
                 <ArrowRight className="ml-3 h-5 w-5 md:h-6 md:w-6" />
               </a>
             </Button>
