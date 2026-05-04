@@ -469,7 +469,7 @@ export const editionsData: Record<string, EditionData> = {
     year: 2016,
     number: 7,
     jury: [
-      { name: 'Abel Jafri', role: 'Membre', photo: '/images/editions/2016/jury/abel-jafri.jpg' },
+      { name: 'Abel Jafri', role: 'Président(e)', photo: '/images/editions/2016/jury/abel-jafri.jpg' },
       { name: 'Roland Nguyen', role: 'Membre', photo: '/images/editions/2016/jury/roland-nguyen.jpg' },
       { name: 'Annabelle Milot', role: 'Membre', photo: '/images/editions/2016/jury/annabelle-milot.jpg' },
       { name: 'Nadia Le Bihen Demmou', role: 'Membre', photo: '/images/editions/2016/jury/nadia-le-bihen-demmou.jpg' },
@@ -488,6 +488,16 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix des Collégiens', film: 'Héros', director: 'Benoît Martin' },
       { prize: 'Prix des Lycéens', film: 'Destino', director: 'Zangro' },
     ],
+    finalistsPresentation: {
+      finalists: [
+        { name: 'Alysse Hallali et Thibault Martin', film: 'Les Tulipes fleurissent aussi', bio: '' },
+        { name: 'Marion Le Coroller', film: 'Nouvelle venue', bio: '' },
+        { name: 'Mickaël Sultan', film: 'Andiamo', bio: '' },
+        { name: 'Mehdi Hamnane', film: 'Talion', bio: '' },
+        { name: 'Souleymane Silla', film: 'Le costume', bio: '' },
+        { name: 'Ylan et Arthur', film: 'Première fois', bio: '' },
+      ],
+    },
     gallery: Array.from({ length: 38 }, (_, i) => ({
       src: `/images/editions/2016/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
       alt: `Cérémonie édition 2016 - Photo ${i + 1}`,
