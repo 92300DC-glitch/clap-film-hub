@@ -33,7 +33,7 @@ export function Header() {
             <img 
               src={logoPtitClap} 
               alt="Festival Ptit Clap" 
-              className="h-8 lg:h-10"
+              className="h-[26px] lg:h-8"
             />
           </Link>
 
