@@ -947,7 +947,7 @@ export const editionsData: Record<string, EditionData> = {
       { rank: 12, film: 'Polaroid', director: 'Aurélien Rapatel' },
       { rank: 13, film: 'Pipinara', director: 'Ludovico di Martino' },
       { rank: 14, film: 'Lessivé', director: 'Alice Boucherie' },
-      { rank: 15, film: 'Haute-Définition', director: 'Félicité Çuhaciender' },
+      { rank: 15, film: 'Haute-Définition', director: '' },
       { rank: 16, film: 'Je suis naive', director: 'Lucas Pascal' },
       { rank: 17, film: 'InLove', director: 'Jérémie Lopez' },
       { rank: 18, film: 'Rosebug', director: 'Johanna Renard' },
