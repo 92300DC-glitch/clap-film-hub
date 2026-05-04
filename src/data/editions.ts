@@ -1016,6 +1016,59 @@ export const editionsData: Record<string, EditionData> = {
       alt: `Cérémonie édition 2019 - Photo ${i + 1}`,
     })),
     galleryCredit: 'Nadège Murez (Ville de Levallois)',
+    interviews: [
+      {
+        name: 'Thibault Copleux',
+        photo: '/images/editions/2019/interviews/thibault-copleux.jpg',
+        role: "Photographe de l'affiche du Festival Ptit Clap 10ème édition",
+        content: [
+          {
+            question: 'Présentation',
+            answer: "Cette année c'est au tour du jeune photographe Thibault Copleux de signer l'affiche du Festival Ptit Clap 2019 et de porter son regard de photographe sur le cinéma. À l'occasion de la présentation de notre affiche, nous avons souhaité lui donner la parole, rencontre.",
+          },
+          {
+            question: 'Thibault, pouvez-vous vous présenter en quelques mots ?',
+            answer: "Je m'appelle Thibault, j'ai 24 ans et je suis photographe. J'ai commencé la photo il y a environ 10 ans et j'ai lancé mon activité depuis 4 ans. Je suis un passionné de l'image, qu'elle soit animée ou non. Je travaille principalement autour de la photographie sociale, notamment les portraits et le mariage.",
+          },
+          {
+            question: 'Pouvez-vous résumer votre parcours en quelques étapes importantes ?',
+            answer: "Comme évoqué plus haut, j'ai commencé la photographie il y a 10 ans. Ma première parution date de 2010 pour un magazine de transport ce qui m'a permis d'acheter mon premier reflex numérique.\n\nEn 2016 je gagne un concours de portrait organisé par Nikon France et ce prix marque le début d'une collaboration entre la marque et mon travail. La même année je sors mon premier court-métrage de 3 minutes « Neon Fight » qui met en avant le harcèlement de rue et plus précisément l'insécurité des femmes, la nuit.\n\nEn 2018 mon deuxième court métrage « Tvillinger » est sorti, j'interviens sur le stand de Nikon lors du salon de la photo et une de mes photos a été retenue pour l'affiche du Festival Ptit Clap 2019 !",
+          },
+          {
+            question: 'Quelle est la perception que vous avez de votre passion ?',
+            answer: "C'est avant tout un plaisir au quotidien. Chaque projet, chaque image est unique et les personnes autour également !\n\nLa photo/vidéo me permet de rencontrer de nouveaux profils, de découvrir de nombreuses entreprises, de nombreux métiers, c'est une ouverture sur le monde. Il y a un côté social unique qui permet de tisser beaucoup de liens.\n\nSans passion, il n'y a pas de projet.",
+          },
+          {
+            question: 'Thibault, quels sont les artistes, photographes… qui vous inspirent le plus ?',
+            answer: "Mon travail évolue avec le temps, mes inspirations aussi ! En ce moment je m'intéresse beaucoup au travail de Charlotte Abramow et son livre « Projet Maurice » est une véritable source d'inspiration.\n\nDans un autre registre je suis également Nick Prideaux pour son travail sur les couleurs et la mise en avant de scènes banales du quotidien.",
+          },
+          {
+            question: "Pouvez-vous nous raconter les dessous de la photographie de l'affiche et ce qu'elle véhicule pour vous ?",
+            answer: "Avec Victoria, modèle de la photographie, l'idée était de créer une atmosphère unique avec une coiffe d'indien. On voulait un univers très pastel avec un coucher de soleil très orangé qui s'approche des couleurs de la coiffe.\n\nÀ l'époque, chacune de mes photos avait une atmosphère différente et le pari était d'avoir un ciel magnifique d'été où les nuages pourraient tamiser la lumière. Sans les nuages on aurait pas eu le même rendu, nous avions eu de la chance pour une fois d'avoir un ciel chargé ! Cette photo véhicule un sentiment de bienveillance, les couleurs sont très chaudes et nous invite à venir découvrir cet univers !",
+          },
+          {
+            question: 'Où avez-vous puisé votre inspiration pour cette photographie ? Quels messages avez-vous voulu faire passer ?',
+            answer: "J'ai puisé mon inspiration à travers les différentes mises en scènes et univers que créé Victor Habchy. L'idée était de faire entrer le spectateur dans la photo et le questionner sur l'univers et sur la présence de la modèle surprise de notre venue.",
+          },
+          {
+            question: 'Vous êtes jeune et talentueux, quels conseils pourriez-vous donner aux jeunes réalisateurs qui participent à Ptit Clap ?',
+            answer: "Je pense qu'il faut se faire plaisir avant tout, prenez du plaisir dans la conception et réalisation de vos films et surprenez-vous ! Outre la technique, misez sur le message que vous voulez faire passer, c'est primordial.\n\nSaisissez la chance et profitez du tremplin qu'offre Ptit Clap !",
+          },
+          {
+            question: 'Un film qui vous a marqué ?',
+            answer: "« Eternal sunshine of the spotless mind » de Michel Gondry pour sa narration plus qu'originale.",
+          },
+          {
+            question: 'Quels sont vos projets futurs ?',
+            answer: "Pour l'avenir je souhaite sortir de ma zone de confort et toujours créer un univers propre à moi en jouant toujours de lumière et d'originalité.",
+          },
+          {
+            question: 'Un petit mot pour la fin ?',
+            answer: "Est-ce trop facile de dire : clap ? 😉",
+          },
+        ],
+      },
+    ],
     trailer: {
       url: 'https://youtu.be/q0WWBkef-OQ?si=zrzr_8P_572piLiG',
       description: 'Appel à film 2019 !',
