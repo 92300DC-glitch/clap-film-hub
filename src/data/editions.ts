@@ -666,8 +666,6 @@ export const editionsData: Record<string, EditionData> = {
       { name: 'Arthur Choisnet', role: 'Membre', photo: '/images/editions/2018/jury/jury-group.jpg' },
       { name: 'Stéphane Debac', role: 'Membre', photo: '/images/editions/2018/jury/jury-group.jpg' },
       { name: 'Cédric Burkarth', role: 'Membre', photo: '/images/editions/2018/jury/jury-group.jpg' },
-      { name: 'Frédéric Groetschel', role: 'Membre', photo: '/images/editions/2018/jury/jury-group.jpg' },
-      { name: 'Olivier Chauvin', role: 'Membre', photo: '/images/editions/2018/jury/jury-group.jpg' },
     ],
     palmares: [
       { prize: 'Grand Prix du Jury', film: 'Selection', director: 'Kyutaek Shim (Corée du Sud)', highlight: true },
