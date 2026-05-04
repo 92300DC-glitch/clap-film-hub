@@ -1016,6 +1016,10 @@ export const editionsData: Record<string, EditionData> = {
       alt: `Cérémonie édition 2019 - Photo ${i + 1}`,
     })),
     galleryCredit: 'Nadège Murez (Ville de Levallois)',
+    trailer: {
+      url: 'https://youtu.be/q0WWBkef-OQ?si=zrzr_8P_572piLiG',
+      description: 'Appel à film 2019 !',
+    },
   },
   '2020': {
     year: 2020,
