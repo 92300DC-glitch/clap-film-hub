@@ -26,6 +26,7 @@ export type InterviewEntry = {
   film?: string;
   prize?: string;
   content: { question: string; answer: string }[];
+  images?: { src: string; caption?: string }[];
 };
 
 export type RankingEntry = {
