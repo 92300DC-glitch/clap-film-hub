@@ -55,6 +55,19 @@ export type YouthCompetition = {
   categories: YouthCompetitionCategory[];
 };
 
+export type FinalistPresentation = {
+  name: string;
+  film: string;
+  bio: string;
+  portrait?: string;
+  poster?: string;
+};
+
+export type FinalistsPresentation = {
+  intro?: string;
+  finalists: FinalistPresentation[];
+};
+
 export type EditionData = {
   year: number;
   number: number;
@@ -66,6 +79,7 @@ export type EditionData = {
   ranking?: RankingEntry[];
   trailer?: TrailerInfo;
   youthCompetition?: YouthCompetition;
+  finalistsPresentation?: FinalistsPresentation;
 };
 
 export const editionsData: Record<string, EditionData> = {
