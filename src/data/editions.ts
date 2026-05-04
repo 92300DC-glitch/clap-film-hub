@@ -34,6 +34,11 @@ export type RankingEntry = {
   director: string;
 };
 
+export type TrailerInfo = {
+  url: string;
+  description: string;
+};
+
 export type EditionData = {
   year: number;
   number: number;
@@ -43,6 +48,7 @@ export type EditionData = {
   galleryCredit?: string;
   interviews?: InterviewEntry[];
   ranking?: RankingEntry[];
+  trailer?: TrailerInfo;
 };
 
 export const editionsData: Record<string, EditionData> = {
