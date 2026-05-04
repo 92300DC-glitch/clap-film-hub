@@ -10,7 +10,7 @@ export default function Ceremony() {
       <section className="bg-primary py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <Badge className="bg-accent text-accent-foreground border-0 text-lg px-4 py-1 mb-4">
-            16ème édition
+            17ème édition
           </Badge>
           <h1 className="text-4xl lg:text-6xl font-black text-primary-foreground uppercase tracking-tight mb-4">
             Cérémonie Officielle
