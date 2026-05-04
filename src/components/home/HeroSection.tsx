@@ -34,8 +34,6 @@ export function HeroSection() {
               <span className="block -ml-[2vw]">PTIT</span>
               <span className="block text-accent ml-[5vw] md:ml-[10vw]">CLAP</span>
             </h1>
-            {/* Decorative strike-through */}
-            <div className="absolute top-1/2 left-0 w-full h-1 md:h-2 bg-accent/30 -rotate-2" />
           </div>
 
           {/* Subtitle - Stark contrast */}
