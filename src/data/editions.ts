@@ -39,6 +39,21 @@ export type TrailerInfo = {
   description: string;
 };
 
+export type YouthCompetitionFilm = {
+  title: string;
+  director: string;
+};
+
+export type YouthCompetitionCategory = {
+  prize: string;
+  films: YouthCompetitionFilm[];
+};
+
+export type YouthCompetition = {
+  intro?: string;
+  categories: YouthCompetitionCategory[];
+};
+
 export type EditionData = {
   year: number;
   number: number;
@@ -49,6 +64,7 @@ export type EditionData = {
   interviews?: InterviewEntry[];
   ranking?: RankingEntry[];
   trailer?: TrailerInfo;
+  youthCompetition?: YouthCompetition;
 };
 
 export const editionsData: Record<string, EditionData> = {
@@ -635,6 +651,55 @@ export const editionsData: Record<string, EditionData> = {
     trailer: {
       url: 'https://youtu.be/64OmLaB8wQc?si=2O7LGeCjwMM1sDfc',
       description: 'Retour sur les meilleurs moments de la finale du Festival Ptit Clap 2018 !',
+    },
+    youthCompetition: {
+      intro: 'Parallèlement au concours de courts métrages dédié aux réalisateurs de 15 à 25 ans, le Festival Ptit Clap c’est aussi trois « Prix Jeunesse » donnant lieu à de nombreuses projections pour les publics scolaires de la primaire au lycée. Nous vous présentons les courts métrages finalistes en 2018 pour ces trois prix. Les projections auront lieu durant tout le mois de mai et les jeunes spectateurs voteront à l’issue de chaque séance.',
+      categories: [
+        {
+          prize: 'Prix des Enfants',
+          films: [
+            { title: 'Ma forêt', director: 'Sébastien Pins' },
+            { title: 'Nebula', director: 'Camille Andre, Marion Bulot, Clément Doranlo, Myriam Fourati, Jonghyun Jungboix, Alexis Kerjosse, Sarah Simon' },
+            { title: 'Je suis pourri gâté', director: 'Vivien Salvagione' },
+            { title: 'Que personne ne sache', director: 'Lydia Castellano' },
+            { title: 'La boîte', director: 'Eliott Belrose, Carole Favier, Loïcia Lagillier, Aloïs Mathé, Juliette Perrey, Joran Rivet' },
+            { title: 'Ici', director: 'Aurélia Hollart' },
+            { title: 'Manolo', director: 'Abel Ringot' },
+          ],
+        },
+        {
+          prize: 'Prix des Collégiens',
+          films: [
+            { title: 'Je suis la clé du problème', director: 'Eden et Gabin Ducourant' },
+            { title: 'Dinosaure', director: 'Pierre Dugowson' },
+            { title: 'Debout Kinshasa !', director: 'Sébastien Maitre' },
+            { title: 'Le programme', director: 'Francis Magnin' },
+            { title: 'Please love me forever', director: 'Holy Fatma' },
+            { title: 'Le monde du petit monde', director: 'Fabrice Bracq' },
+            { title: 'Je suis 10 euros', director: 'Florent Hill et Nicolas Moneuse' },
+            { title: 'How Tommy Lemenchick became a Grade 7 Legend', director: 'Bastien Alexandre' },
+          ],
+        },
+        {
+          prize: 'Prix des Lycéens',
+          films: [
+            { title: 'Je suis cocu', director: 'Pierre Amstutz Roch' },
+            { title: 'Alice', director: 'Karine Silla Perez' },
+            { title: 'Je suis un règlement de contes', director: 'Julien Cheminade et Matthieu Ponchel' },
+            { title: 'Fils', director: 'Cyrus Neshvad' },
+            { title: 'Leçon de choses', director: 'Pierre Dugowson' },
+            { title: 'Je suis Cendrillon de Damas', director: 'Salah Issaad' },
+            { title: 'Troc Mort', director: 'Martin Darondeau' },
+            { title: 'Je suis Milan', director: 'Valentine Caille' },
+            { title: 'Grain de poussière', director: 'Léopold Kraus' },
+            { title: 'Un nouveau départ', director: 'Michael Zazoun' },
+            { title: 'Zu', director: 'Julien Aveque et Victor Hérault' },
+            { title: 'Je suis un cochon', director: 'Judith Margolin et Sara Ginac' },
+            { title: 'Deux dollars', director: 'Emmanuel Tenenbaum' },
+            { title: 'Je suis grande maintenant', director: 'Enya Baroux' },
+          ],
+        },
+      ],
     },
     ranking: [
       { rank: 1, film: 'Selection', director: 'Kyutaek Shim' },
