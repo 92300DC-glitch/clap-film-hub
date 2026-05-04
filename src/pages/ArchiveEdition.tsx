@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered } from 'lucide-react';
+import { ArrowLeft, Trophy, Users, Camera, Award, Star, ListOrdered, Film } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { editionsData } from '@/data/editions';
@@ -267,6 +267,24 @@ export default function ArchiveEdition() {
         {/* Gallery */}
         {edition!.gallery.length > 0 && (
           <div>
+            {edition!.trailer && (
+              <div className="mb-16">
+                <h2 className="text-3xl font-black uppercase tracking-tight mb-6 flex items-center gap-3">
+                  <Film className="h-7 w-7 text-accent" />
+                  Bande-annonce
+                </h2>
+                <p className="text-foreground mb-6 max-w-3xl">{edition!.trailer.description}</p>
+                <div className="aspect-video w-full max-w-4xl border-4 border-border bg-muted">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${(edition!.trailer.url.match(/(?:youtu\.be\/|v=)([\w-]{11})/) || [])[1] || ''}`}
+                    title={`Bande-annonce édition ${edition!.year}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            )}
             <h2 className="text-3xl font-black uppercase tracking-tight mb-2 flex items-center gap-3">
               <Camera className="h-7 w-7 text-accent" />
               Galerie photos
