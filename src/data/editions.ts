@@ -25,6 +25,7 @@ export type InterviewEntry = {
   photo: string;
   film?: string;
   prize?: string;
+  role?: string;
   content: { question: string; answer: string }[];
   images?: { src: string; caption?: string }[];
 };
