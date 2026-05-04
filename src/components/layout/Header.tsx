@@ -57,6 +57,16 @@ export function Header() {
 
           {/* Right Side */}
           <div className="flex items-center gap-3">
+            {/* CTA Inscription */}
+            <a
+              href="https://www.eventbrite.fr/e/billets-ceremonie-officielle-du-festival-ptit-clap-1982436637348?aff=oddtdtcreator&_gl=1*ougq5g*_up*MQ..*_ga*MTEyNzEzMzc5My4xNzc3OTA1MzAy*_ga_TQVES5V6SH*czE3Nzc5MDUzMDAkbzEkZzAkdDE3Nzc5MDUzMDAkajYwJGwwJGgw&keep_tld=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center px-4 py-2 text-xs font-black uppercase tracking-wider bg-accent text-accent-foreground border-2 border-foreground shadow-[4px_4px_0_0_hsl(var(--foreground))] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_hsl(var(--foreground))] transition-all duration-150"
+            >
+              Inscription à la cérémonie officielle
+            </a>
+
             {/* Language Switcher */}
             <div className="flex items-center border-2 border-foreground/30 rounded-md overflow-hidden">
               <button
