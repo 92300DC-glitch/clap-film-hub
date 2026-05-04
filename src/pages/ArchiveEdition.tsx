@@ -256,7 +256,7 @@ export default function ArchiveEdition() {
                   </span>
                   <div className="flex-1 min-w-0">
                     <span className="font-bold text-foreground">{entry.film}</span>
-                    <span className="text-muted-foreground"> de {entry.director}</span>
+                    {entry.director && <span className="text-muted-foreground"> de {entry.director}</span>}
                   </div>
                 </div>
               ))}
