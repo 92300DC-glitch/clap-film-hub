@@ -579,6 +579,17 @@ export const editionsData: Record<string, EditionData> = {
       { prize: 'Prix des Collégiens', film: 'La convention de Genève', director: 'Benoit Martin' },
       { prize: 'Prix des Lycéens', film: 'Les frémissements du thé', director: 'Marc Fouchard' },
     ],
+    finalistsPresentation: {
+      finalists: [
+        { name: 'Kristine Popovici', film: 'The Last Dinner', bio: '' },
+        { name: 'Jonathan Bouillot', film: 'Suriyan', bio: '' },
+        { name: 'Johannes Bachmann', film: 'Driven', bio: '' },
+        { name: 'Kahina Asnoun', film: 'Rageuse', bio: '' },
+        { name: 'Fantin Curtet', film: 'Le Doigt', bio: '' },
+        { name: 'Danny Hamilton', film: '45', bio: '' },
+        { name: 'César De Lorme', film: 'Un jour, je serai cow-boy', bio: '' },
+      ],
+    },
     gallery: Array.from({ length: 63 }, (_, i) => ({
       src: `/images/editions/2017/gallery/${String(i + 1).padStart(2, '0')}.jpg`,
       alt: `Cérémonie édition 2017 - Photo ${i + 1}`,
