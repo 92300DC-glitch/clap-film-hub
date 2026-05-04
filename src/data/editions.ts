@@ -691,6 +691,44 @@ export const editionsData: Record<string, EditionData> = {
           },
         ],
       },
+      {
+        name: 'Matthieu Gonet',
+        photo: '/images/editions/2018/interviews/matthieu-gonet.jpg',
+        content: [
+          {
+            question: 'Présentation',
+            answer: "Matthieu Gonet est sur tous les fronts. Musicien compositeur, mais aussi chef d'orchestre, pianiste, il a déjà une carrière extraordinaire et a accompagné Mariah Carey, Phil Collins, Céline Dion, Charles Aznavour et bien d'autres artistes… Matthieu a également été le directeur musical de la Star Academy et a très récemment composé la musique de film de Santa & Cie sorti le 6 décembre.\n\nNous avons d'ailleurs croisé Alain Chabat au Pathé Levallois qui nous a fait part du bonheur de travailler avec Matthieu Gonet. Nous souhaitions aujourd'hui partager avec vous un moment avec cet artiste bourré de talent et avec un cœur énorme.",
+          },
+          {
+            question: "Comment s'est passé la réalisation de la musique de Santa & Cie ? Est-ce que l'on vous laisse carte blanche ou vous avez un thème, des indications à suivre ?",
+            answer: "Le réalisateur dans ce cas précis était Alain Chabat et cela s'est passé sur ce film comme sur tous les autres. Le compositeur propose au réalisateur de la musique séquences par séquences, ce sont des maquettes (des musiques produites sur ordinateur), puis une fois que les maquettes sont validées par le réalisateur, on prépare la suite : la réalisation de la musique avec l'orchestre symphonique. Sur Santa & Cie, on a enregistré 70 musiciens en orchestre. Ensuite on procède au mixage de la musique, au mixage du film ce qui incorpore les bruitages, les dialogues et la musique.",
+          },
+          {
+            question: 'Pouvez-vous nous raconter votre parcours ?',
+            answer: "J'ai commencé le piano à 3 ans et à partir de 9 ans j'ai demandé à mes parents de continuer mes cours par correspondance pour ne faire que de la musique. En contrepartie, je faisais 8h de musique, sept jours sur sept, et cela m'a permis de rentrer au Conservatoire National de Paris à 14 ans. Ce qui n'était pas forcément facile socialement car à cet âge on aime se faire des amis ! J'ai accompagné pas mal de chanteurs pendant des années en tant que pianiste, j'ai fait de la télévision pendant 7 ans sur un programme sur TF1, puis ensuite j'ai dirigé durant 4 ans le Conservatoire de Levallois. Et aujourd'hui depuis 5 ans je compose exclusivement des musiques de films.",
+          },
+          {
+            question: "Avez-vous d'autres grands projets qui arrivent à grand pas ?",
+            answer: "Oui, en ce moment je continue à composer les musiques d'une série qui s'intitule « Demain nous appartient » qui est diffusée tous les soirs à l'antenne à 19h30. J'ai également deux films qui arrivent dans mes projets, le prochain film avec Audrey Lamy (Ma Reum) et le prochain film avec Arnaud Ducret qui aborde le sujet du syndrome d'Asperger.",
+          },
+          {
+            question: 'Vous avez deux jeunes enfants. Avec votre métier, vous arrivez à garder un peu de temps pour vous ?',
+            answer: "Je vais essayer d'en prendre un peu plus à partir de la semaine prochaine car il est vrai que j'ai cette chance d'avoir tout ce travail, mais que j'ai aussi une fille qui a 5 ans… Elle croit encore au Père Noël et j'étais content de l'amener voir Santa & Cie et de participer à ce film qui lui a plu.",
+          },
+          {
+            question: "Vous êtes membre de l'Académie des arts et techniques du cinéma. Comment fait-on pour faire son choix devant autant de possibilités ?",
+            answer: "En tant que membre de l'Académie, nous recevons un coffret avec tous les films de l'année, donc c'est plutôt chouette de pouvoir les regarder sachant que certains ne sont pas encore sortis. Il faut regarder beaucoup de films, voir comment le cinéma évolue et à partir de cela on fait nos choix sur un site internet sécurisé, cela se passe sur deux tours. Cela a beaucoup d'importance pour tout le monde : les réalisateurs, les acteurs et pour nous mais c'est surtout une reconnaissance qui aide à lancer une carrière.",
+          },
+          {
+            question: "Et à chaque fois que l'équipe du Festival Ptit Clap vous sollicite, vous répondez toujours présent pour venir échanger avec les plus jeunes sur votre métier. La transmission, c'est important pour vous ?",
+            answer: "Oui absolument, la transmission c'est très important, c'est d'ailleurs le travail qu'effectue Isabelle Pauvert qui est formidable, elle fait ça avec dévouement, avec beaucoup de passion ! Le cinéma c'est un des rares arts qui peut être infini, cela peut être créé par quelqu'un de 18 ans comme quelqu'un de 98 ans, et le cinéma de demain se prépare aujourd'hui. On a la chance d'avoir un nombre incalculable de sorties de films, plus de 400 films par an alors qu'il y a 15 ans on était loin du compte.",
+          },
+          {
+            question: 'Merci chaleureusement à Matthieu pour cet échange !',
+            answer: 'Propos recueillis par Charlotte Calvat',
+          },
+        ],
+      },
     ],
     trailer: {
       url: 'https://youtu.be/64OmLaB8wQc?si=2O7LGeCjwMM1sDfc',
