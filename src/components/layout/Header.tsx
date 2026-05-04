@@ -64,7 +64,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center px-4 py-2 text-xs font-black uppercase tracking-wider bg-accent text-accent-foreground border-2 border-foreground shadow-[4px_4px_0_0_hsl(var(--foreground))] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_hsl(var(--foreground))] transition-all duration-150"
             >
-              Inscription à la cérémonie officielle
+              S'inscrire à la cérémonie
             </a>
 
             {/* Language Switcher */}
