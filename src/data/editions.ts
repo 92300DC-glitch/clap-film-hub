@@ -542,6 +542,10 @@ export const editionsData: Record<string, EditionData> = {
       alt: `Cérémonie édition 2017 - Photo ${i + 1}`,
     })),
     galleryCredit: 'Nadège Murez (Ville de Levallois), Marceau Uguen et Thierry Stefanopoulos (Visual Press Agency)',
+    trailer: {
+      url: 'https://youtu.be/kbOikMnTrsE?si=y4GEVC6l2ovphp-k',
+      description: 'Bande-annonce de notre 8ème concours de courts métrages, réalisée par Valérian Cadici et son équipe Métro Studio, pour vous inviter à réviser vos fondamentaux en cinéma !',
+    },
     ranking: [
       { rank: 1, film: 'Coudre et Découdre', director: 'Ines Bensalem' },
       { rank: 2, film: 'The Dark Box', director: 'Iness Rychlik' },
