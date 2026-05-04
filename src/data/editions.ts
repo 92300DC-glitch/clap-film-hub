@@ -518,8 +518,8 @@ export const editionsData: Record<string, EditionData> = {
     year: 2017,
     number: 8,
     jury: [
-      { name: 'Raphaël Mezrahi', role: 'Président(e)', photo: '/images/editions/2017/jury/raphael-mezrahi.jpg' },
-      { name: 'Roland N\'Guyen', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Roland N\'Guyen', role: 'Président(e)', photo: '/images/editions/2017/jury/jury-group.jpg' },
+      { name: 'Raphaël Mezrahi', role: 'Membre', photo: '/images/editions/2017/jury/raphael-mezrahi.jpg' },
       { name: 'Julien Cheminade', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
       { name: 'Farida Ouchani', role: 'Membre', photo: '/images/editions/2017/jury/farida-ouchani.jpg' },
       { name: 'Yamina Belarbi', role: 'Membre', photo: '/images/editions/2017/jury/jury-group.jpg' },
