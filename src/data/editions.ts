@@ -648,6 +648,50 @@ export const editionsData: Record<string, EditionData> = {
       alt: `Cérémonie édition 2018 - Photo ${i + 1}`,
     })),
     galleryCredit: 'Nadège Murez (Ville de Levallois)',
+    interviews: [
+      {
+        name: 'Nathalie Lenoir',
+        photo: '/images/editions/2018/interviews/nathalie-lenoir.jpg',
+        content: [
+          {
+            question: 'Présentation',
+            answer: "Nathalie Lenoir a accepté de nous rencontrer dans un café pour une interview. Auteure et scénariste depuis plus de 15 ans, elle tient la page ScenarioBuzz depuis presque 8 ans et conseille habilement les jeunes scénaristes sur les techniques de cette profession…",
+          },
+          {
+            question: "Bonjour Nathalie, d'abord merci d'être là avec nous ! Qu'est ce qui vous a décidé à ouvrir un site comme ScenarioBuzz ?",
+            answer: "Quand j'ai commencé à travailler en tant que scénariste, je travaillais pour la presse papier & web (cinéma) et je tenais déjà un blog dédié à l'audiovisuel, dont ma partie qui traitait de scénarios. Comme cela marchait bien, je me suis dis que je pouvais me lancer et créer mon blog, début 2010.\n\nC'était tout d'abord une volonté de mettre en avant un métier mal connu en France, pour ne pas dire peu valorisé. Je me suis rendue compte qu'il y avait une réelle absence d'informations sur le sujet, c'est donc devenu le challenge de défendre le métier au sens large, puis l'idée de donner quelques conseils aux jeunes scénaristes.\n\nCela a donc eu un certain succès qui m'a encouragé à poursuivre ma démarche.",
+          },
+          {
+            question: "Cela a eu un sacré succès en effet, nous à Festival PtitClap nous sommes fans de votre travail ! Est-ce qu'avec tout cela vous arrivez à garder un peu de temps pour vous quand même ?",
+            answer: "(rires) Pas beaucoup, je me suis donné depuis peu de temps la règle de ne pas travailler le samedi, mais le seul moyen de garder mon blog a été de choisir de travailler dessus le dimanche.",
+          },
+          {
+            question: "Est-ce que ScenarioBuzz est destiné à tous les types de scénaristes ? (court-métrage, long métrage, roman, mais aussi jeux-vidéos)",
+            answer: "Au début je parlais plutôt de télévision et de cinéma puisque ce sont les médias dans lequel je travaille mais j'ai essayé dès que possible de parler de scénarios de bande-dessinée, de jeux-vidéos, mais ce sont des expériences que je n'ai pas à titre personnel même si cela m'intéresse donc j'essaie de trouver des informations et des interviews à relayer sur le site. Je me suis rendue compte que les jeux-vidéos et les bandes-dessinées étaient traitées sur des plateformes dédiées.\n\nPour ce qui est du court-métrage et long-métrage, cela rentre complètement dans ma thématique et puis les techniques d'écritures sont semblables.",
+          },
+          {
+            question: "Est-ce que petite vous voyiez évoluer dans ce milieu ou vous avez eu d'autres rêves en tête ?",
+            answer: "J'ai toujours voulu bosser très tôt dans le cinéma, en revanche, comme beaucoup de gens, je ne me posais pas tant la question de savoir ce qu'était le métier de scénariste. J'écrivais un peu pour mon plaisir et adolescente je suis devenue comédienne en intégrant le Cours Florent. C'est cette expérience qui m'a fait comprendre qu'on pouvait écrire pour un spectacle et de manière professionnelle. Cela m'a également confortée dans l'idée que c'était de cette manière là que je voulais raconter des histoires et non pas devant la caméra.",
+          },
+          {
+            question: "Je n'ai pas trouvé d'autres sites français qui conseille les scénaristes, pourquoi à votre avis, vous êtes la seule à tenir ce genre de blog ?",
+            answer: "Dans un esprit militant, je pensais vraiment que d'autres allaient se lancer également, et effectivement il y a eu quelques tentatives de blogs mais ils n'ont pas duré. Je pense que les gens ne se sont pas forcément rendu compte du travail colossal qui est de tenir un blog, ne serait-ce que pour le faire référencer, l'alimenter et garder l'audience. Il faut avoir aussi des compétences techniques telles que le langage HTML qui est primordial si on veut qu'une plateforme fonctionne.\n\nToutes ces choses peuvent peut-être refroidir certaines personnes à se lancer et il est vrai que cela demande un peu de courage dans la prise de parole. Dans le sens général, j'ai beaucoup de soutien venant de plusieurs horizons, mais il m'est déjà arrivé d'en faire grincer des dents certains.",
+          },
+          {
+            question: "Vous avez rejoint le collectif Women In Film et Le Deuxième Regard, pouvez-vous nous en parler ?",
+            answer: "Ce sont deux associations qui essaient de mettre en lumière les conditions de travail des femmes dans le cinéma et l'audiovisuel, car effectivement ce sont des conditions particulièrement difficiles. Pour ce qui est du niveau de la parité, à mon échelle, j'ai moi-même pu remarquer à quel point on a régressé et c'est un peu flippant !",
+          },
+          {
+            question: "Est-ce que vous avez des buts par rapport à votre site ?",
+            answer: "J'essaie d'économiser mon énergie pour le garder déjà (rires), car cela prend du temps et j'aimerais ne pas être seule à communiquer dans ce sens. Disons que mon objectif avec un grand O serait que les choses avancent, pour tous !\n\nJ'essaie de casser l'image du scénariste, c'est-à-dire un gros bonhomme alcoolique aigri et qui ne sort pas de sa grotte… J'espère rendre cette image sympathique et amusante.\n\nPour le moment c'est un métier qui est en train de se professionnaliser : il y a plus de formations, à La Fémis ou Nanterre-Université par exemple, ce qui pourra par la suite former les jeunes à construire leur réseau car aujourd'hui on (les auteurs) a tous des parcours très différents, et on reste quand même très à la traîne par rapport aux pays anglo-saxons.",
+          },
+          {
+            question: "Merci Nathalie pour ce bel échange !",
+            answer: "Propos recueillis par Charlotte Calvat — Photographe ©Katia Maeder",
+          },
+        ],
+      },
+    ],
     trailer: {
       url: 'https://youtu.be/64OmLaB8wQc?si=2O7LGeCjwMM1sDfc',
       description: 'Retour sur les meilleurs moments de la finale du Festival Ptit Clap 2018 !',
