@@ -632,6 +632,10 @@ export const editionsData: Record<string, EditionData> = {
       alt: `Cérémonie édition 2018 - Photo ${i + 1}`,
     })),
     galleryCredit: 'Nadège Murez (Ville de Levallois)',
+    trailer: {
+      url: 'https://youtu.be/64OmLaB8wQc?si=2O7LGeCjwMM1sDfc',
+      description: 'Retour sur les meilleurs moments de la finale du Festival Ptit Clap 2018 !',
+    },
     ranking: [
       { rank: 1, film: 'Selection', director: 'Kyutaek Shim' },
       { rank: 2, film: 'On verra demain', director: 'Benjamin Richardot' },
