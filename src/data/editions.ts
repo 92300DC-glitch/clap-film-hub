@@ -836,6 +836,85 @@ export const editionsData: Record<string, EditionData> = {
         },
       ],
     },
+    finalistsPresentation: {
+      intro: "La finale du Festival Ptit Clap 2018 arrive à grand pas ! Afin de vous préparer au mieux pour cette belle journée qui se tiendra le samedi 9 juin, nous vous proposons d'en connaître un peu plus sur nos heureux finalistes…",
+      finalists: [
+        {
+          name: 'Rafaël Klepfisch & Léopold Deru',
+          film: 'Mayla',
+          bio: "Rafaël Klepfisch est étudiant à l'IAD (Institut des Arts de Diffusion / Belgique). Il termine actuellement sa deuxième année de master réalisation. Parallèlement à l'IAD, il s'est essayé à des films auto-produits et suit un master d'histoire à distance à l'université du Mans.\n\nLéopold Deru a étudié à l'Institut des Arts de Diffusion, une école de cinéma belge basée à Louvain-la-Neuve. En 4e année, il réalise Mayla avec Rafaël Klepfisch. Actuellement, il vit en Australie.",
+        },
+        {
+          name: 'Kévin Hilem',
+          film: "L'air de rien",
+          bio: "Kévin Hilem est né en 1996 dans l'Essonne. Depuis son plus jeune âge, il est passionné par l'audiovisuel et plus particulièrement le cinéma. Il s'engage dans des études de cinéma au sein de l'EICAR. Dès sa 2ème année, Kévin réalise son premier court métrage : « L'air de rien ». Il sera récompensé du prix de la meilleure fiction et du grand prix du jury. En parallèle de ses études, il est cadreur et monteur professionnel : il monte notamment des clips pour des artistes comme Booba, Soprano et plein d'autres. Kévin est en constante recherche d'équilibre entre haute technicité, esthétique de l'image et profondeur scénaristique.",
+        },
+        {
+          name: 'Louise Condemi',
+          film: 'Une tasse de chlore',
+          bio: "Après deux années de classes préparatoires littéraires en spécialité art dramatique, Louise Condemi rejoint un cursus universitaire en études théâtrales et cinéma à l'Université de Paris 3 Sorbonne Nouvelle. Elle décide de poursuivre ses études au Master Pro de Cinéma « Scénario, Réalisation, Production » à l'Université de Paris 1 Panthéon-Sorbonne. En parallèle, les médias de vidéo directe Snapchat et Instagram deviennent les lieux d'expérimentations de son univers. Ils lui permettent notamment de développer un rapport humoristique et décalé à l'intimité. À l'été 2016, elle décide de se lancer dans son premier projet de court métrage Une tasse de chlore.",
+        },
+        {
+          name: 'Aurélien Rapatel',
+          film: 'Polaroid',
+          bio: "Aurélien Rapatel est un jeune scénariste, réalisateur et producteur français. Après avoir eu son bac en section cinéma, il fait une licence cinéma à l'Université Paris Diderot. En parallèle de ses études il réalise différents courts métrages notamment avec la comédienne Juliette Tresanini. Ses films reflètent sa volonté de toucher à plusieurs genres qu'il s'agisse de l'absurde (Rémi), du drame (Je suis ta fille), de l'épouvante (Polaroid) ou encore de la comédie musicale (Je suis une comédie musicale).",
+        },
+        {
+          name: 'Ludovico Di Martino',
+          film: 'Pipinara',
+          bio: "Ludovico Di Martino est né en 1992 à Rome. Il a obtenu un diplôme en tant que réalisateur de film en 2017, et a tourné le court métrage « Pipinara » (gagnant du Meilleur Scénario au Concours Créatif Rome). Il a réalisé la série « Web des Rôles », attribuée au Festival de Fiction de Rome en 2013, et le long métrage « Notre Dernier », attribué comme le meilleur film au Festival Ferrare et qui a obtenu une mention spéciale au Festival du cinéma du New Jersey.",
+        },
+        {
+          name: 'Benjamin Richardot',
+          film: 'On verra demain',
+          bio: "Bonjour à tous ! Je suis Benjamin Richardot, jeune comédien et réalisateur de 22 ans. Je suis le réalisateur du film « On verra demain ». Toute l'équipe est très fière de vous présenter ce film. Et nous sommes pressés d'avoir vos retours. Un grand merci au P'tit Clap !",
+        },
+        {
+          name: 'Sacha Ferbus & Jérémy Puffet',
+          film: 'FIFO',
+          bio: "Sacha Ferbus étudie la réalisation à l'IAD et travaille en Belgique comme machiniste sur les plateaux de cinéma. Il s'agit de son 1er court métrage en dehors d'exercices scolaires. Il est originaire de Bruxelles.\n\nJérémy Puffet étudie dans la même classe et présente également son premier film. Il est originaire de Namur.",
+        },
+        {
+          name: 'Jules Bonnel',
+          film: 'Entre les lignes',
+          bio: "Après un début d'études scientifiques en classe préparatoire, Jules Bonnel choisit de se diriger vers les métiers du cinéma. De 2015 à 2017 il suit une formation en alternance en option métiers de l'image au BTS audiovisuel de Boulogne. Depuis, il travaille en tant qu'opérateur et monteur sur des projets variés (courts métrages, clips, documentaires, making-of). Les personnages qui l'inspirent sont les rêveurs éveillés, ces personnes discrètement en marge qui tentent chaque jour d'enchanter notre monde. Entre les lignes est son premier court métrage.",
+        },
+        {
+          name: 'Mathieu Mouterde',
+          film: 'Huit',
+          bio: "Passionné par le 7ème art depuis l'adolescence et ayant pratiqué l'aviron à haut niveau : j'essaie de procurer les émotions que j'ai pu ressentir dans le sport par le biais d'une caméra. C'est ce qui me passionne le plus. J'ai pu réaliser plusieurs courts métrages grâce à l'École de la Cité et travailler sur des longs métrages ce qui a été très formateur pour moi.",
+          portrait: '/images/editions/2018/finalists/mathieu-mouterde.png',
+        },
+        {
+          name: 'Kyutaek Shim',
+          film: 'Selection',
+          bio: "Bonjour, je suis Kyutaek Shim, j'ai 23 ans et je viens de Corée du Sud. J'étudie le cinéma à l'université de Chung-Ang et Selection (뽑기) est mon deuxième film. J'espère que vous l'apprécierez, merci !",
+          portrait: '/images/editions/2018/finalists/kyutaek-shim.jpeg',
+          poster: '/images/editions/2018/finalists/selection.jpg',
+        },
+        {
+          name: 'Eden & Gabin Ducourant',
+          film: 'Je suis la clé du problème',
+          bio: "Elle est comédienne, elle a fait ses armes dans la série Braquo sur Canal+ et a obtenu son premier rôle sur grand écran dans Bis de Dominique Farrugia. Il est co-fondateur d'Undrglobe, un collectif qui vise à promouvoir la créativité dans toutes ses formes au travers de vidéos et d'événements mêlant art, mode et musique. Elle est diplômée de Central Saint Martins à Londres, il a fait HEC Paris. Ils sont frère et sœur et pour la première fois Eden et Gabin font de la réalisation une affaire de famille. D'abord un challenge, ce film marque le début d'une nouvelle complicité artistique.",
+          portrait: '/images/editions/2018/finalists/eden-gabin-ducourant.jpg',
+          poster: '/images/editions/2018/finalists/je-suis-la-cle-du-probleme.jpg',
+        },
+        {
+          name: 'Ida-Maria Olva',
+          film: 'Pintaan',
+          bio: "Ida-Maria Olva est une réalisatrice, scénariste et musicienne basée à Tampere, en Finlande. Elle s'est spécialisée en scénarisation en 2016. Elle a travaillé comme journaliste pour la société de diffusion finlandaise YLE. Cet automne, elle commence ses études de maîtrise en réalisation de films.",
+          portrait: '/images/editions/2018/finalists/ida-maria-olva.png',
+          poster: '/images/editions/2018/finalists/pintaan.png',
+        },
+        {
+          name: 'Robin Deriaud',
+          film: 'Paris est noire',
+          bio: "Après avoir remporté le prix inter-BTS 2015 du meilleur film avec « Goldenfish », Robin arrête son cursus académique de façon prématurée pour intégrer l'École de la Cité, fondée en 2012 par Luc Besson. Il participe alors à différents tournages, le plus souvent en tant que réalisateur, mais ses compétences le poussent également à travailler le montage et l'image. Il mélange dans ses créations différents styles et genres, comme le film d'animation, le conte, la comédie musicale ou encore la poésie. Baignant dans un univers urbain, il est inspiré par le street-art et les rencontres inopinées qu'il aime retranscrire à l'écran.",
+          portrait: '/images/editions/2018/finalists/robin-deriaud.jpg',
+          poster: '/images/editions/2018/finalists/paris-est-noire.png',
+        },
+      ],
+    },
     ranking: [
       { rank: 1, film: 'Selection', director: 'Kyutaek Shim' },
       { rank: 2, film: 'On verra demain', director: 'Benjamin Richardot' },
