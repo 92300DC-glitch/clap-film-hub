@@ -125,13 +125,6 @@ export default function Ceremony() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-bold text-foreground">
-                    Bientôt ouverte
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Les informations de billetterie seront communiquées
-                    prochainement.
-                  </p>
                   <a
                     href="https://www.eventbrite.fr/e/billets-ceremonie-officielle-du-festival-ptit-clap-1982436637348?aff=oddtdtcreator&_gl=1*ougq5g*_up*MQ..*_ga*MTEyNzEzMzc5My4xNzc3OTA1MzAy*_ga_TQVES5V6SH*czE3Nzc5MDUzMDAkbzEkZzAkdDE3Nzc5MDUzMDAkajYwJGwwJGgw&keep_tld=true"
                     target="_blank"
