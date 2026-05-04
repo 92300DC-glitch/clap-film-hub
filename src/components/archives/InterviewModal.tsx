@@ -42,6 +42,9 @@ export function InterviewModal({ interview, open, onOpenChange }: InterviewModal
                     <em>{interview.film}</em>
                   </p>
                 )}
+                {!interview.film && interview.role && (
+                  <p className="text-primary-foreground/80 text-sm mt-1">{interview.role}</p>
+                )}
               </div>
             </div>
           </div>
