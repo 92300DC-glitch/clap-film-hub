@@ -32,7 +32,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.countdown.hours': 'Heures',
     'hero.countdown.minutes': 'Minutes',
     'hero.countdown.seconds': 'Secondes',
-    'hero.countdown.until': 'Fin de l\'appel à films',
+    'hero.countdown.until': 'Cérémonie dans',
     
     // Sections
     'section.featuredFilms': 'Films à la une',
@@ -221,7 +221,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.countdown.hours': 'Hours',
     'hero.countdown.minutes': 'Minutes',
     'hero.countdown.seconds': 'Seconds',
-    'hero.countdown.until': 'Call for films ends',
+    'hero.countdown.until': 'Ceremony in',
     
     // Sections
     'section.featuredFilms': 'Featured Films',
